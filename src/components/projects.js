@@ -8,7 +8,7 @@ export default function Projects () {
       const projects = [
         {
           company: 'Alskar',
-          title: 'CEO',
+          title: 'Founder',
           logo: logoAlskar,
           start: '2009',
           end: {
@@ -31,7 +31,7 @@ export default function Projects () {
           end: '2019',
         },
         {
-          company: 'Sali a Comer',
+          company: 'Pasá por Acá',
           title: 'Founder',
           logo: logoComer,
           start: '2010',
