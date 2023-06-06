@@ -39,6 +39,7 @@
 	--redsocial-behance: #053eff;
   --redsocial-twitch: #6441A5;
   --redsocial-email: #ee6152;
+  --redsocial-dribbble: #ea4c89;
   /* --logo: "https://alskarcloud.com/imagenes/logo_cloud_positivo.svg"; */
 }
 
@@ -75,6 +76,8 @@
   --redsocial-behance: #fff;
   --redsocial-twitch: #fff;
   --redsocial-email: #fff;
+  --redsocial-dribbble: #fff;
+  --redsocial-github: #fff;
 }
 @media (prefers-color-scheme: dark){
   :root {
@@ -84,6 +87,8 @@
   --redsocial-behance: #fff;
   --redsocial-twitch: #fff;
   --redsocial-email: #fff;
+  --redsocial-dribbble: #fff;
+  --redsocial-github: #fff;
   }
 }
   /* --logo: "https://alskarcloud.com/imagenes/logo_cloud_blanco.svg"; */
