@@ -37,7 +37,7 @@ export default function SocialMedia() {
           <Icon className="redes" icon="bi:behance" color="var(--redsocial-behance)" height="28" />
         </a> */}
         <a href="https://instagram.com/calvonico" target={'_blank'} rel={'noreferrer'} ><Icon className="redes" icon="bi:instagram" color='var(--redsocial-instagram)' height="24" /></a>
-        <a target={'_blank'} rel={'noreferrer'} >
+        <a href="https://dribbble.com/calvonico" target={'_blank'} rel={'noreferrer'} >
           <Icon icon="bi:dribbble" className="redes" height="24" color="var(--redsocial-dribbble)" />
         </a>
         {/* <a href="https://twitter.com/calvonico" target={'_blank'} rel={'noreferrer'}><Icon className='redes' icon="bi:twitter" color='var(--redsocial-twitter)' height="28" /></a> */}
