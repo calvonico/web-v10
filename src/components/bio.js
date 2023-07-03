@@ -23,7 +23,7 @@ export default function Bio() {
           in Buenos Aires, Argentina, now based in beautiful Oporto, Portugal.
         </p>
         <p className="mt-1">
-        I like to travel and explore new cities; and I love watching movies, 'fútbol' and video games.
+        I like to travel and explore new cities; and I love watching movies, football and video games.
         </p>
       </div>
     </div>
