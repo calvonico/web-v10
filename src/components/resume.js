@@ -2,7 +2,6 @@ import logoCeibo from "../img/ceibo.svg";
 import logoWunderman from "../img/wunderman.svg";
 import logoDespegar from "../img/despegar.svg";
 import logoEmblue from "../img/emblue.svg";
-import logoVenmo from "../img/venmo.svg";
 
 export default function Resume() {
   const resume = [
@@ -15,13 +14,6 @@ export default function Resume() {
         label: "Present",
         dateTime: new Date().getFullYear(),
       },
-    },
-    {
-      company: "PayPal / Venmo",
-      title: "Visual Designer",
-      logo: logoVenmo,
-      start: "2021",
-      end: "2022",
     },
     {
       company: "Despegar",

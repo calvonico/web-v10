@@ -2,6 +2,7 @@ import logoCine from '../img/cine.svg'
 import logoDCA from '../img/dca.svg'
 import logoAlskar from '../img/alskar.svg'
 import logoComer from '../img/comer.svg'
+import logoVenmo from "../img/venmo.svg";
 
 export default function Projects () {
 
@@ -15,6 +16,13 @@ export default function Projects () {
             label: 'Present',
             dateTime: new Date().getFullYear(),
           },
+        },
+        {
+          company: "PayPal / Venmo",
+          title: "Visual Designer",
+          logo: logoVenmo,
+          start: "2021",
+          end: "2022",
         },
         {
           company: 'DC Academy',
