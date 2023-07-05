@@ -144,6 +144,9 @@ export default function App() {
                     <Projects />
                   </div>
                   <div className="caja dark:bg-slate-950">
+                    <Notes />
+                  </div>
+                  <div className="caja dark:bg-slate-950">
                     <Movies />
                   </div>
                   <div className="caja dark:bg-slate-950">

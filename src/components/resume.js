@@ -105,7 +105,7 @@ export default function Resume() {
         <a
           href="https://linkedin.com/in/nicolascalvo"
           target="_blank"
-          className="flex w-full items-center justify-center rounded-xl bg-teal-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-teal-700 focus-visible:outline-offset-0 transition-colors"
+          className="flex w-full items-center justify-center rounded-xl bg-teal-600 px-3 py-2 text-base font-semibold text-white shadow-sm hover:bg-teal-700 focus-visible:outline-offset-0 transition-colors"
         >
           Go to LinkedIn{" "}
           <svg

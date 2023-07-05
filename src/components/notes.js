@@ -26,14 +26,17 @@ export default function Suscripcion() {
           <NewspaperIcon className="h-6 w-6 flex-none" />
           <span className="ml-3">Latest note</span>
         </h2>
-        <div className="mt-6">
-          contrenido
+        <div className="mt-6 h-24 overflow-hidden relative" style={{ boxSizing: "border-box" }}>
+          <div className="">
+          contrenido un poco largo para poder ver que tanto se puede poner. Cuantas lineas de texto podemos poner aca y hacer el difuminado y el truncado para seguir leyendo y que se corte y el texto sigue sigue
+          </div>
+          <div className="bg-gradient-to-t from-white z-10 absolute inset-0"></div>
         </div>
         <div className="mt-6">
         <a
           
           target="_blank"
-          className="flex w-full items-center justify-center rounded-xl bg-teal-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-teal-700 focus-visible:outline-offset-0 transition-colors"
+          className="flex w-full items-center justify-center rounded-xl bg-teal-600 p-2 font-semibold text-white shadow-sm hover:bg-teal-700 focus-visible:outline-offset-0 transition-colors"
         >
           Read all notes
         </a>
