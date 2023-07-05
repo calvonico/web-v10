@@ -6,6 +6,7 @@ import Portfolio from "./components/portfolio";
 import Projects from "./components/projects";
 import Resume from "./components/resume";
 import SocialMedia from "./components/socialmedia";
+import Suscripcion from "./components/suscripcion";
 
 // function SunIcon(props) {
 //   return (
@@ -101,15 +102,20 @@ export default function App() {
                   <div className="caja dark:bg-slate-950">
                     <Movies />
                   </div>
+
                 </div>
                 <div className="my-masonry-grid_column">
                   <Climamap />
+                  
                   <div className="caja dark:bg-slate-950">
                     <Resume />
                   </div>
                   
                   <div className="caja dark:bg-slate-950">
                     <Projects />
+                  </div>
+                  <div className="caja dark:bg-slate-950">
+                    <Suscripcion />
                   </div>
                   <div className="caja dark:bg-slate-950">
                     <SocialMedia />

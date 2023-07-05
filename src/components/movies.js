@@ -74,7 +74,6 @@ export default function Movies() {
         </div>
       </div>
       <h5 className="flex pt-2 justify-center text-xs font-normal text-zinc-900 dark:text-zinc-100">Movies last update: July 2023</h5>
-      {/* <div id="postlist"></div> */}
     </div>
     
   );
