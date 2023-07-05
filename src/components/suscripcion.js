@@ -45,7 +45,7 @@ export default function Suscripcion() {
             value="763cAB763qr0763vhY9g7K7635Jb9A"
           />
           <input type="hidden" name="subform" value="yes" />
-          <input type="submit" name="submit" id="submit" value="Subscribe" className="block w-full px-3 py-2 mt-2 rounded-xl bg-teal-600 text-sm font-semibold text-white shadow-sm hover:bg-teal-700" />
+          <input type="submit" name="submit" id="submit" value="Subscribe" className="block w-full px-3 py-2 mt-2 rounded-xl bg-teal-600 text-sm font-semibold text-white shadow-sm hover:bg-teal-700" style={{ cursor: "pointer" }} />
         </form>
       </div>
       {/* { new Alert({ type: 'success', message: 'Toast Message Here', }) } */}
