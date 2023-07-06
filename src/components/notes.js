@@ -26,12 +26,19 @@ export default function Suscripcion() {
           <NewspaperIcon className="h-6 w-6 flex-none" />
           <span className="ml-3">Latest note</span>
         </h2>
-        <div className="mt-6 h-24 overflow-hidden relative" style={{ boxSizing: "border-box" }}>
-          <div className="">
+        <div className="mt-6">
+
+
+            <h3 className="text-xl font-bold dark:text-white">
+                El titulo de la nota
+            </h3>
+        <div className="mt-1 h-24 overflow-hidden relative" style={{ boxSizing: "border-box" }}>
+          <div className="dark:text-zinc-100">
           contrenido un poco largo para poder ver que tanto se puede poner. Cuantas lineas de texto podemos poner aca y hacer el difuminado y el truncado para seguir leyendo y que se corte y el texto sigue sigue
           </div>
-          <div className="bg-gradient-to-t from-white z-10 absolute inset-0"></div>
+          <div className="bg-gradient-to-t from-white dark:from-slate-950 z-10 absolute inset-0"></div>
         </div>
+                </div>
         <div className="mt-6">
         <a
           

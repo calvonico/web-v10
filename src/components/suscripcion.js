@@ -32,7 +32,8 @@ export default function Suscripcion() {
               name="name"
               placeholder="Name"
               id="name"
-              className="w-1/2 me-2 rounded-xl px-3 py-2 ring-1 ring-inset ring-gray-200 border-gray-300 bg-gray-50 shadow-sm focus:border-teal-500 focus:ring focus:ring-teal-400 focus:ring-opacity-50"
+              className="w-1/2 me-2 rounded-xl px-3 py-2 ring-1 ring-inset ring-gray-200 border-gray-300 bg-gray-50 shadow-sm focus:border-teal-500 focus:ring focus:ring-teal-400 focus:ring-opacity-50 dark:bg-gray-900
+              dark:ring-gray-700 dark:text-white"
               required
             />
 
@@ -41,7 +42,8 @@ export default function Suscripcion() {
               name="email"
               placeholder="your@email.com"
               id="email"
-              className="w-1/2 rounded-xl px-3 py-2 ring-1 ring-inset ring-gray-200 border-gray-300 bg-gray-50 shadow-sm focus:border-teal-500 focus:ring focus:ring-teal-400 focus:ring-opacity-50"
+              className="w-1/2 rounded-xl px-3 py-2 ring-1 ring-inset ring-gray-200 border-gray-300 bg-gray-50 shadow-sm focus:border-teal-500 focus:ring focus:ring-teal-400 focus:ring-opacity-50  dark:bg-gray-900
+              dark:ring-gray-700 dark:text-white"
               required
             />
           </div>
@@ -62,7 +64,7 @@ export default function Suscripcion() {
             name="submit"
             id="submit"
             value="Subscribe"
-            className="block w-full p-2 mt-3 rounded-xl bg-zinc-300 font-semibold text-zinc-900 shadow-sm hover:bg-teal-700 hover:text-white transition-all"
+            className="block w-full p-2 mt-3 rounded-xl bg-zinc-300 font-semibold text-zinc-900 shadow-sm hover:bg-teal-700 hover:text-white dark:bg-zinc-700 dark:text-white transition-all"
             style={{ cursor: "pointer" }}
           />
         </form>
