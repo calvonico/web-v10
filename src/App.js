@@ -121,11 +121,12 @@ export default function App() {
                   <div className="caja dark:bg-slate-950">
                     <Suscripcion />
                   </div>
-                  <div className="caja dark:bg-slate-950">
-                    <SocialMedia />
-                  </div>
+                  
                 </div>
               </div>
+              <div className="cuadro-bio dark:bg-slate-950">
+                    <SocialMedia />
+                  </div>
             </div>
 
             <div className="ver_mobile">
