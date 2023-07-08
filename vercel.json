@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/notes", "destination": "https://nicocalvo.com/notes" },
+    { "source": "/notes/:path*", "destination": "https://nicocalvo.com/notes/:path*" }
+  ]
+}
