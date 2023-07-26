@@ -3,10 +3,21 @@ import logoDCA from '../img/dca.svg'
 import logoAlskar from '../img/alskar.svg'
 import logoComer from '../img/comer.svg'
 import logoVenmo from "../img/venmo.svg";
+import logoSamba from "../img/samba.svg"
 
 export default function Projects () {
 
       const projects = [
+        {
+          company: 'Samba',
+          title: "Sr. Graphic Designer",
+          logo: logoSamba,
+          start: '2023',
+          end: {
+            label: 'Present',
+            dateTime: new Date().getFullYear(),
+          },       
+        },
         {
           company: 'Alskar',
           title: 'Founder',
