@@ -53,8 +53,8 @@
     border-radius: 50%;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
     /* margin: 10px; */
-    height: 12px;
-    width: 12px;
+    height: 10px;
+    width: 10px;
     transform: scale(1);
     animation: pulse-black 2s infinite;
   }
@@ -192,7 +192,7 @@
   }
   
   .blob.green {
-    background: rgba(0, 187, 131, 1);
+    background: rgba(0, 187, 131, .9);
     box-shadow: 0 0 0 0 rgba(0, 187, 131, 1);
     animation: pulse-green 2s infinite;
   }
