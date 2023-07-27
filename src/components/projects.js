@@ -10,7 +10,7 @@ export default function Projects () {
       const projects = [
         {
           company: 'Samba',
-          title: "Sr. Graphic Designer",
+          title: "Sr Graphic Designer",
           logo: logoSamba,
           start: '2023',
           end: {

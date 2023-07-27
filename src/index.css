@@ -415,6 +415,22 @@
   display: block;
 }
 
+.available {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  height: min-content;
+  justify-content: start;
+  overflow: visible;
+  /* padding: 0 0 0 4px; */
+  position: relative;
+  width: 100%;
+}
+
 /* MOBILE  */
 
 @media screen and (max-width: 575.98px) {
