@@ -19,7 +19,7 @@ export default function Projects () {
         //   },       
         // },
         {
-          company: 'Alskar',
+          company: 'Alskar', 
           title: 'Founder',
           logo: logoAlskar,
           start: '2009',
