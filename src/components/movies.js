@@ -1,6 +1,6 @@
-import poster1 from '../img/films/todoalavez.jpg'
-import poster2 from '../img/films/flash.jpg'
-import poster3 from '../img/films/phantom-open.jpg'
+import poster2 from '../img/films/todoalavez.jpg'
+import poster3 from '../img/films/flash.jpg'
+import poster1 from '../img/films/guardians3.jpg'
 
 
 import Tippy from '@tippyjs/react';
@@ -56,24 +56,24 @@ export default function Movies() {
         <div className="carrusel-posters">
           <a href="https://letterboxd.com/calvonico/" target='_blank' rel='noopener noreferrer'>
           <div className="posters poster-1 shadow-xl z-10">
-              <Tippy content="Everything everywhere all at once &ndash; ★★★★" theme={'light-border'} arrow={false} animation={'shift-toward'}>
+              <Tippy content="Guardians of the Galaxy Volume 3 &ndash; ★★★★★" theme={'light-border'} arrow={false} animation={'shift-toward'}>
                 <img src={poster1} alt="movie" />
               </Tippy>
             </div>
             <div className="posters poster-2 shadow-2xl -rotate-5">
-              <Tippy content="The Flash &ndash; ★★★1/2" theme={'light-border'} arrow={false} animation={'shift-toward'} >
+              <Tippy content="Everything everywhere all at once &ndash; ★★★★" theme={'light-border'} arrow={false} animation={'shift-toward'} >
                 <img src={poster2} alt="movie" />
               </Tippy>
             </div>
             <div className="posters poster-3 shadow-2xl rotate-4">
-              <Tippy content="The Phantom of the Open &ndash; ★★★1/2" theme={'light-border'} arrow={false} animation={'shift-toward'} >
+              <Tippy content="The Flash &ndash; ★★★1/2" theme={'light-border'} arrow={false} animation={'shift-toward'} >
                 <img src={poster3} alt="movie" />
               </Tippy>              
             </div>
           </a>
         </div>
       </div>
-      <h5 className="flex pt-2 justify-center text-xs font-normal text-zinc-900 dark:text-zinc-100">Movies last update: July 2023</h5>
+      <h5 className="flex pt-2 justify-center text-xs font-normal text-zinc-900 dark:text-zinc-100">Movies last update: August 2023</h5>
     </div>
     
   );
