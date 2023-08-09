@@ -2,7 +2,7 @@ import Alskar from "./components/alskar";
 import Bio from "./components/bio";
 import Climamap from "./components/climamap";
 import Movies from "./components/movies";
-import Portfolio from "./components/portfolio";
+import Portfolio from "./components/portfolio3";
 import Projects from "./components/projects";
 import Resume from "./components/resume";
 import SocialMedia from "./components/socialmedia";
