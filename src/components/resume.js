@@ -101,12 +101,17 @@ export default function Resume() {
           </li>
         ))}
       </ol>
+      {/* <a href="#" class="rounded px-5 py-2.5 overflow-hidden group bg-green-500 relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
+<span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+<span class="relative">Button Text</span>
+</a> */}
       <div className="mt-6">
         <a
           href="https://linkedin.com/in/nicolascalvo"
           target="_blank"
-          className="flex w-full items-center justify-center rounded-xl bg-teal-600 px-3 py-2 text-base font-semibold text-white shadow-sm hover:bg-teal-700 focus-visible:outline-offset-0 transition-colors"
+          className="flex w-full items-center justify-center rounded-xl bg-teal-600 px-3 py-2 text-base font-semibold text-white shadow-sm relative overflow-hidden group hover:bg-gradient-to-r hover:from-teal-600 hover:to-teal-700  hover:ring-2 hover:ring-offset-2 hover:ring-teal-500 transition-all ease-out duration-300"
         >
+          <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-96 trans ease"></span>
           Go to LinkedIn{" "}
           <svg
             fill="none"

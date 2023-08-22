@@ -64,9 +64,8 @@ export default function Suscripcion() {
             name="submit"
             id="submit"
             value="Subscribe"
-            className="block w-full p-2 mt-3 rounded-xl bg-zinc-300 font-semibold text-zinc-900 shadow-sm hover:bg-teal-700 hover:text-white dark:bg-zinc-700 dark:text-white transition-all"
-            style={{ cursor: "pointer" }}
-          />
+            className="relative block w-full p-2 mt-3 rounded-xl bg-zinc-300 font-semibold text-zinc-900 shadow-sm overflow-hidden group hover:bg-gradient-to-r hover:from-teal-600 hover:to-teal-700  hover:ring-2 hover:ring-offset-2 hover:ring-teal-500 transition-all ease-out duration-300 hover:text-white dark:bg-zinc-700 dark:text-white"
+            style={{ cursor: "pointer" }} />
         </form>
       </div>
       {/* { new Alert({ type: 'success', message: 'Toast Message Here', }) } */}
