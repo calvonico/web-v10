@@ -1,7 +1,4 @@
-
 export default function Alskar() {
-
-
   return (
     <div>
       <div className="css3 mt-2 mb-4">
@@ -12,12 +9,14 @@ export default function Alskar() {
                 srcSet="https://alskarcloud.com/imagenes/logo_cloud_negativo.svg"
                 media="(prefers-color-scheme:dark)"
               />
-              <img
-                alt="Alskar"
-                decoding="async"
-                src="https://alskarcloud.com/imagenes/logo_cloud_positivo.svg"
-                className="imagen-caja"
-              />
+              <a href="https://alskarcloud.com" target="_blank">
+                <img
+                  alt="Alskar"
+                  decoding="async"
+                  src="https://alskarcloud.com/imagenes/logo_cloud_positivo.svg"
+                  className="imagen-caja"
+                />
+              </a>
             </picture>
           </div>
         </div>
