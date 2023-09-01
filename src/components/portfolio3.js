@@ -1,8 +1,8 @@
-import imgTeengo from "../img/work/teengo-600x380.jpg";
-import imgDonation from "../img/work/donapp-600x380.jpg";
-import imgVenmo from "../img/work/venmo-600x380.jpg";
+import imgTeengo from "../img/work/teengo-500x500.png";
+import imgDonation from "../img/work/donapp-500x500.png";
+import imgVenmo from "../img/work/venmo-500x500.png";
 // import imgApple from "../img/work/apple-600x380.jpg";
-import imgDespegar from "../img/work/despegar-600x380.jpg";
+import imgDespegar from "../img/work/despegar-500x500.png";
 import imgApple2 from "../img/work/apple_11reasons.jpg";
 import imgApple3 from "../img/work/Apple_work.jpg";
 import imgApple4 from "../img/work/Apple_mac.jpg";
