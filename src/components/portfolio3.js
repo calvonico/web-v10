@@ -38,6 +38,7 @@ export default function Portfolio() {
       description: "UX/UI redesign of a digital wallet",
       imageUrl: imgTeengo,
       url: 'https://www.behance.net/gallery/156573117/Wallet-App-UIUX-Redesign',
+      // url: '/work/wallet-app',
     },
     {
       name: "NGO Donation App",
@@ -97,7 +98,7 @@ export default function Portfolio() {
             >
               {work.map((portfolio) => (
                 <li key={portfolio.description}>
-                    <a href={portfolio.url} target="_blank"><img className="aspect-[14/13] w-full rounded-2xl object-cover shadow-md hover:shadow-lg transition-all" src={portfolio.imageUrl} alt="Portfolio" /></a>
+                    <a href={portfolio.url} ><img className="aspect-[14/13] w-full rounded-2xl object-cover shadow-md hover:shadow-lg transition-all" src={portfolio.imageUrl} alt="Portfolio" /></a>
                     <h3 className="mt-4 text-sm font-semibold text-zinc-900 dark:text-zinc-100">{portfolio.name}</h3>
                     {/* <p className="text-base leading-7 text-gray-500 dark:text-zinc-400">{portfolio.description}</p> */}
                     {/* <p className="text-sm leading-6 text-gray-500">{person.location}</p> */}

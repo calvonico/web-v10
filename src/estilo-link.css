@@ -1,0 +1,66 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: #fbfbfb;
+}
+
+.wrapper {
+    margin: auto 5% !important;
+}
+
+.profile {
+    width: 250px;
+}
+
+.botonardo {
+    background: #ffffff;
+    padding: 10px;
+    max-width: 400px;
+    border-radius: 10px;    
+}
+.botonardo:not(.disabled):hover {
+    background: #339a99;
+    transition: background-color .20s ease-in-out;
+    color: white;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.verde {
+    color: teal;
+    text-transform: uppercase;
+}
+.twitter {
+    color: #1da1f2;
+}
+.linkedin {
+    color: #0072b1;
+}
+.behance {
+    color: #1769ff;
+}
+.twitch {
+    color: #6441a5;
+}
+.instagram {
+    color: #000;
+} 
+
+.iconos {
+    font-size: 24px;
+    padding: 50px 0;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 575.98px) {
+    .profile  {
+        width: 50% !important;
+    }
+}

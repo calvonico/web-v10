@@ -118,7 +118,7 @@
   box-sizing: border-box;
   width: 100%;
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
   position: relative;
   z-index: 1;
   min-height: 0;
