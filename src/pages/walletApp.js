@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
-
-import { CheckCircleIcon } from "@heroicons/react/20/solid";
+import hero from '../img/work/TG/teengo_hero.png'
+import grafico1 from '../img/work/TG/grafico-1.png'
+import grafico2 from '../img/work/TG/grafico-2.png'
+import empathy from '../img/work/TG/empathy.png'
+import userpersona from '../img/work/TG/user-persona.png'
+import benchmark from '../img/work/TG/benchmark.png'
+import arquitectura from '../img/work/TG/arquitectura.png'
+import sistema from '../img/work/TG/sistema.png'
+import ui from '../img/work/TG/ui.png'
 
 export default function walletApp() {
   return (
@@ -40,122 +47,172 @@ export default function walletApp() {
                 exit={{ opacity: 0 }}
               >
                 <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700 dark:text-white">
-                  <p className="text-base font-semibold leading-7 text-teal-600">
-                    Introducing
-                  </p>
                   <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-                    JavaScript for Beginners
+                    Wallet App - TeenGo
                   </h1>
-                  <p className="mt-6 text-xl leading-8">
-                    Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                    sem. At arcu, sit dui mi, nibh dui, diam eget aliquam.
-                    Quisque id at vitae feugiat egestas ac. Diam nulla orci at
-                    in viverra scelerisque eget. Eleifend egestas fringilla
-                    sapien.
+                  <p className="mt-6 text-xl leading-8 text-slate-400">
+                  Digital wallet, community and financial education geared towards teenagers
                   </p>
                   <figure className="mt-12">
                     <img
                       className="aspect-video rounded-xl bg-gray-50 object-cover shadow-2xl"
-                      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
+                      src={hero}
                       alt=""
                     />
                   </figure>
-                  <div className="mt-10 max-w-2xl">
-                    <p>
-                      Faucibus commodo massa rhoncus, volutpat. Dignissim sed
-                      eget risus enim. Mattis mauris semper sed amet vitae sed
-                      turpis id. Id dolor praesent donec est. Odio penatibus
-                      risus viverra tellus varius sit neque erat velit. Faucibus
-                      commodo massa rhoncus, volutpat. Dignissim sed eget risus
-                      enim. Mattis mauris semper sed amet vitae sed turpis id.
-                    </p>
-                    <ul
-                      role="list"
-                      className="mt-8 max-w-xl space-y-8 text-gray-600 dark:text-gray-400"
-                    >
-                      <li className="flex gap-x-3">
-                        <CheckCircleIcon
-                          className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                          aria-hidden="true"
-                        />
-                        <span>
-                          <strong className="font-semibold text-gray-900 dark:text-white">
-                            Data types.
-                          </strong>{" "}
-                          Lorem ipsum, dolor sit amet consectetur adipisicing
-                          elit. Maiores impedit perferendis suscipit eaque, iste
-                          dolor cupiditate blanditiis ratione.
-                        </span>
-                      </li>
-                      <li className="flex gap-x-3">
-                        <CheckCircleIcon
-                          className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                          aria-hidden="true"
-                        />
-                        <span>
-                          <strong className="font-semibold text-gray-900">
-                            Loops.
-                          </strong>{" "}
-                          Anim aute id magna aliqua ad ad non deserunt sunt. Qui
-                          irure qui lorem cupidatat commodo.
-                        </span>
-                      </li>
-                      <li className="flex gap-x-3">
-                        <CheckCircleIcon
-                          className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                          aria-hidden="true"
-                        />
-                        <span>
-                          <strong className="font-semibold text-gray-900">
-                            Events.
-                          </strong>{" "}
-                          Ac tincidunt sapien vehicula erat auctor pellentesque
-                          rhoncus. Et magna sit morbi lobortis.
-                        </span>
-                      </li>
-                    </ul>
-                    <p className="mt-8">
-                      Et vitae blandit facilisi magna lacus commodo. Vitae
-                      sapien duis odio id et. Id blandit molestie auctor
-                      fermentum dignissim. Lacus diam tincidunt ac cursus in
-                      vel. Mauris varius vulputate et ultrices hac adipiscing
-                      egestas. Iaculis convallis ac tempor et ut. Ac lorem vel
-                      integer orci.
-                    </p>
-                    <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                      From beginner to expert in 3 hours
+
+                  <div className="mt-16 max-w-full">
+                    <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-sm leading-5 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                        <div>
+                          <dt className="font-semibold text-gray-900">Overview</dt>
+                          <dd className="mt-1 text-gray-600">With the purpose of building the financial well-being of the new generations in Latin America, we created a solution to turn our children into financial specialists.</dd>
+                        </div>
+                        <div>
+                          <dt className="font-semibold text-gray-900">Role</dt>
+                          <dd className="mt-1 text-gray-600">Product Designer</dd>
+                          <dt className="font-semibold mt-5 text-gray-900">Responsibilities</dt>
+                          <dd className="mt-1 text-gray-600">User research - Design - Prototyping</dd>
+                        </div>
+                    </dl>
+                  </div>
+
+                  <div className="relative bg-gray-100 overflow-hidden flex-auto h-0.5 w-full mt-14"></div>
+
+                  <div className="mt-14 max-w-2xl">
+                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+                      The Objective
                     </h2>
                     <p className="mt-6">
-                      Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                      consequat in. Convallis arcu ipsum urna nibh. Pharetra,
-                      euismod vitae interdum mauris enim, consequat vulputate
-                      nibh. Maecenas pellentesque id sed tellus mauris, ultrices
-                      mauris. Tincidunt enim cursus ridiculus mi. Pellentesque
-                      nam sed nullam sed diam turpis ipsum eu a sed convallis
-                      diam.
+                    Incorporate new features and fixes previously identified. <br />
+                    Design a new UX for teens and implement UI improvements. <br />
+                    To work on UX for teens we need to research and understand the pain and context in depth.
                     </p>
                   </div>
 
-                  <div className="mt-16 max-w-2xl">
+                  <div className="mt-14 max-w-2xl">
                     <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-                      Everything you need to get up and running
+                    Knowing our users
                     </h2>
                     <p className="mt-6">
-                      Purus morbi dignissim senectus mattis adipiscing. Amet,
-                      massa quam varius orci dapibus volutpat cras. In amet eu
-                      ridiculus leo sodales cursus tristique. Tincidunt sed
-                      tempus ut viverra ridiculus non molestie. Gravida quis
-                      fringilla amet eget dui tempor dignissim. Facilisis auctor
-                      venenatis varius nunc, congue erat ac. Cras fermentum
-                      convallis quam.
+                    With the intention of improving the UX, we started by understanding the money management of 11-17 year olds, their main pains in financial issues, the link with their peers when using money, their knowledge of concepts such as virtual wallets, saving and investing. We also presented the main screens of the application to get their opinions and feedback on certain elements, layout, design and interpretation of the functionalities.
                     </p>
-                    <p className="mt-8">
-                      Faucibus commodo massa rhoncus, volutpat. Dignissim sed
-                      eget risus enim. Mattis mauris semper sed amet vitae sed
-                      turpis id. Id dolor praesent donec est. Odio penatibus
-                      risus viverra tellus varius sit neque erat velit.
+                    <p className="mt-6">
+                    With this objective in mind, we created a survey of 32 questions: 4 to capture demographic information, 18 regarding the relationship with money, and 10 focused on the application. Some of the questions were closed-ended, some were open-ended, and some were to rank concepts from most to least relevant, for example.
                     </p>
                   </div>
+                  <figure className="mt-12">
+                    <img
+                      className="aspect-auto rounded-xl bg-gray-50 object-cover "
+                      src={grafico1}
+                      alt="age and genre"
+                    />
+                  </figure>
+                  <div className="mt-14 max-w-2xl">
+                    <p>
+                    To address the understanding of respondents' relationship with money, we began by asking them in what ways they receive money in their daily lives.
+                    </p>
+                  </div>
+                  <figure className="mt-12">
+                    <img
+                      className="aspect-auto rounded-xl bg-gray-50 object-cover "
+                      src={grafico2}
+                      alt="query"
+                    />
+                  </figure>
+                  <figure className="mt-12">
+                    <img
+                      className="aspect-auto rounded-xl bg-gray-50 object-cover "
+                      src={empathy}
+                      alt="empathy map"
+                    />
+                  </figure>
+
+                  <div className="mt-14 max-w-2xl">
+                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+                      Some Conclusions
+                    </h2>
+                    <p className="mt-6">
+                    After the analysis performed, we can deduce that the age range targeted by Teengo is highly dependent on their parents in terms of money management. We note this as a positive finding, as it tends to indicate to us that the spending control that their parents could do through the application would not be an impediment to use.
+                    </p>
+                    <p className="mt-6">
+                    In relation to the means of payment used, we identified that cash continues to be the protagonist among the youngest children, with 59% of the sample indicating it as the preferred means of payment. This opens the door for us, given that in many cases this is due to the fact that there is no accessible digital payment alternative for them. We identified that the use of debit cards not only depends on age, but is also associated with the fact of living in big cities or close to them. Something similar happens with QR payments.
+                    </p>
+                    <p className="mt-6">
+                    Two-thirds of the respondents indicate that their income is on demand. In relation to expenses, they are higher than $1000 per week across the entire spectrum of the sample, evidencing an increase in spending in teenagers aged 14 and older, marked by the increase in social events and autonomy. Such consumption is mainly oriented towards social events with friends, food consumption in educational institutions and the purchase of clothing.
+                    </p>
+                    <p className="mt-6">On the other hand, we found that the concept of savings is widespread among most young people, highlighting that more than 70% have savings, and 86% are willing to learn how to invest.</p>
+                  </div>
+
+                  <figure className="mt-12">
+                    <img
+                      className="aspect-auto rounded-xl bg-gray-50 object-cover "
+                      src={userpersona}
+                      alt="User persona"
+                    />
+                  </figure>
+                  <figure className="mt-12">
+                    <img
+                      className="aspect-auto rounded-xl bg-gray-50 object-cover "
+                      src={benchmark}
+                      alt="embenchmark"
+                    />
+                  </figure>
+                  <figure className="mt-12">
+                    <img
+                      className="aspect-auto rounded-xl bg-gray-50 object-cover "
+                      src={arquitectura}
+                      alt="Information Architecture"
+                    />
+                  </figure>
+                  <figure className="mt-12">
+                    <img
+                      className="aspect-auto rounded-xl bg-gray-50 object-cover "
+                      src={sistema}
+                      alt="Design System"
+                    />
+                  </figure>
+
+                  <div className="mt-14 max-w-2xl">
+                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+                      What's in each section
+                    </h2>
+                    <p className="mt-6">
+                    In Discover section you will be able to access all the educational video content, save your progress and win medals. The benefits section has exclusive discounts in gastronomy and fashion, and in the games section you can play some awesome games.
+                    </p>
+                    <p className="mt-6">
+                    In the wallet section, you will access the summary of all your expenses for the month, you will see who gave you money, where you spent it and you will be able to generate savings to buy things or to go on vacation.
+                    </p>
+                    <p className="mt-6">
+                    In your profile you will have control of the app: you can change your nickname, your photo, your password, see your progress and your awards and learn more about financial education. If you are a tutor you can manage all the other teens, change your payment methods and more.
+                    </p>                    
+                  </div>
+                  <div className="mt-14 max-w-2xl">
+                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+                      The final look
+                    </h2>
+                    <p className="mt-6">
+                    Our high-fidelity mockups showcase the app's visual elements, designed for an intuitive user experience.
+                    </p>                  
+                  </div>
+
+                  <figure className="mt-12">
+                    <img
+                      className="aspect-auto rounded-xl bg-gray-50 object-cover "
+                      src={ui}
+                      alt="The final look"
+                    />
+                  </figure>
+
+                  <div className="mt-14 max-w-2xl">
+                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+                      Conclusion
+                    </h2>
+                    <p className="mt-6">
+                    TeenGo is not just a financial app. It's not just a virtual wallet. TeenGo is a meeting place for teenagers and young adults who want to control their money, manage their finances, know what they spend, how to save, learn about crypto and chat with their friends.
+With this redesign we raised the application to modern standards, studied the preferences of our target audience and achieved an intuitive interface, familiar and fun at the same time.
+                    </p>                  
+                  </div>
+
                 </div>
               </motion.div>
             </div>

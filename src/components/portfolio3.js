@@ -37,8 +37,8 @@ export default function Portfolio() {
       name: "Wallet App",
       description: "UX/UI redesign of a digital wallet",
       imageUrl: imgTeengo,
-      url: 'https://www.behance.net/gallery/156573117/Wallet-App-UIUX-Redesign',
-      // url: '/work/wallet-app',
+      // url: 'https://www.behance.net/gallery/156573117/Wallet-App-UIUX-Redesign',
+      url: '/work/wallet-app',
     },
     {
       name: "NGO Donation App",
