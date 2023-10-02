@@ -61,17 +61,17 @@ export default function walletApp() {
                     />
                   </figure>
 
-                  <div className="mt-16 max-w-full">
+                  <div className="mt-16 max-w-full ">
                     <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-sm leading-5 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                         <div>
-                          <dt className="font-semibold text-gray-900">Overview</dt>
-                          <dd className="mt-1 text-gray-600">With the purpose of building the financial well-being of the new generations in Latin America, we created a solution to turn our children into financial specialists.</dd>
+                          <dt className="font-semibold text-gray-900 dark:text-white">Overview</dt>
+                          <dd className="mt-1 text-gray-600 dark:text-white">With the purpose of building the financial well-being of the new generations in Latin America, we created a solution to turn our children into financial specialists.</dd>
                         </div>
                         <div>
-                          <dt className="font-semibold text-gray-900">Role</dt>
-                          <dd className="mt-1 text-gray-600">Product Designer</dd>
-                          <dt className="font-semibold mt-5 text-gray-900">Responsibilities</dt>
-                          <dd className="mt-1 text-gray-600">User research - Design - Prototyping</dd>
+                          <dt className="font-semibold text-gray-900 dark:text-white">Role</dt>
+                          <dd className="mt-1 text-gray-600 dark:text-white">Product Designer</dd>
+                          <dt className="font-semibold mt-5 text-gray-90 dark:text-white">Responsibilities</dt>
+                          <dd className="mt-1 text-gray-600 dark:text-white">User research - Design - Prototyping</dd>
                         </div>
                     </dl>
                   </div>
@@ -79,7 +79,7 @@ export default function walletApp() {
                   <div className="relative bg-gray-100 overflow-hidden flex-auto h-0.5 w-full mt-14"></div>
 
                   <div className="mt-14 max-w-2xl">
-                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+                    <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       The Objective
                     </h2>
                     <p className="mt-6">
@@ -90,7 +90,7 @@ export default function walletApp() {
                   </div>
 
                   <div className="mt-14 max-w-2xl">
-                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+                    <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     Knowing our users
                     </h2>
                     <p className="mt-6">
@@ -128,7 +128,7 @@ export default function walletApp() {
                   </figure>
 
                   <div className="mt-14 max-w-2xl">
-                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+                    <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       Some Conclusions
                     </h2>
                     <p className="mt-6">
@@ -173,7 +173,7 @@ export default function walletApp() {
                   </figure>
 
                   <div className="mt-14 max-w-2xl">
-                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+                    <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       What's in each section
                     </h2>
                     <p className="mt-6">
@@ -187,7 +187,7 @@ export default function walletApp() {
                     </p>                    
                   </div>
                   <div className="mt-14 max-w-2xl">
-                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+                    <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       The final look
                     </h2>
                     <p className="mt-6">
@@ -204,7 +204,7 @@ export default function walletApp() {
                   </figure>
 
                   <div className="mt-14 max-w-2xl">
-                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+                    <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       Conclusion
                     </h2>
                     <p className="mt-6">

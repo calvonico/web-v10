@@ -2,6 +2,7 @@
   "rewrites": [
     { "source": "/notes", "destination": "https://nico-notion-blog.vercel.app/notes" },
     { "source": "/notes/:path*", "destination": "https://nico-notion-blog.vercel.app/notes/:path*" },
-    { "source": "/work/:path*", "destination": "https://nicocalvo-v10.vercel.app/work/:path*" }
+    { "source": "/work/:path*", "destination": "https://nicocalvo-v10.vercel.app/work/:path*" },
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
