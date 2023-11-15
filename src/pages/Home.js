@@ -22,9 +22,7 @@ export default function Home() {
               <div className="caja dark:bg-slate-950">
                 <Portfolio />
               </div>
-              <div className="caja dark:bg-slate-950">
-                <Alskar />
-              </div>
+
               {/* <div className="caja dark:bg-slate-950">
                   <Notes />
                 </div> */}
@@ -34,22 +32,25 @@ export default function Home() {
             </div>
             <div className="my-masonry-grid_column">
               <Climamap />
-
               <div className="caja dark:bg-slate-950">
+                <Alskar />
+              </div>
+              {/* <div className="caja dark:bg-slate-950">
                 <Resume />
-              </div>
+              </div> */}
 
-              <div className="caja dark:bg-slate-950">
+              {/* <div className="caja dark:bg-slate-950">
                 <Projects />
-              </div>
+              </div> */}
               <div className="caja dark:bg-slate-950">
                 <Suscripcion />
               </div>
+              <div className="caja dark:bg-slate-950">
+                <SocialMedia />
+              </div>
             </div>
           </div>
-          <div className="cuadro-bio dark:bg-slate-950">
-            <SocialMedia />
-          </div>
+
         </div>
 
         <div className="ver_mobile">
@@ -58,15 +59,15 @@ export default function Home() {
               <div className="caja dark:bg-slate-950">
                 <Portfolio />
               </div>
-              <div className="caja dark:bg-slate-950">
+              {/* <div className="caja dark:bg-slate-950">
                 <Resume />
-              </div>
+              </div> */}
               <div className="caja dark:bg-slate-950">
                 <Alskar />
               </div>
-              <div className="caja dark:bg-slate-950">
+              {/* <div className="caja dark:bg-slate-950">
                 <Projects />
-              </div>
+              </div> */}
               {/* <div className="caja dark:bg-slate-950">
                   <Notes />
                 </div> */}
