@@ -28,8 +28,8 @@ export default function Bio() {
         I like to travel and explore new cities; and I love watching movies, football and video games.
         </p>
         <div className="blobs-container available mt-4">
-          <div className='blob green'></div>
-          <div className="text-sm text-gray-500">Available for freelance work</div>
+          <div className='blob red'></div>
+          <div className="text-sm text-gray-500">Not Available for freelance work</div>
         </div>
       </div>
     </div>
