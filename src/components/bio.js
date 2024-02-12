@@ -22,10 +22,13 @@ export default function Bio() {
           I'm a entrepeneur, designer and developer passionate about building things that help people. Born and raised in Buenos Aires, Argentina, now based in beautiful Oporto, Portugal.
         </p>
         <p className="mt-3">
-        For the last 12 years my work has consisted of marketing design: building creative assets for email, social media, websites, and more. I have also developed several websites, UI for mobile applications, and have mentored and led teams of designers.
+          For the last 12 years my work has consisted of marketing design: building creative assets for email, social media, websites, and more. I have also developed several websites, UI for mobile applications, and have mentored and led teams of designers.
         </p>
         <p className="mt-3">
-        I like to travel and explore new cities; and I love watching movies, football and video games.
+          Lately I've been working as a Creative Lead, coordinating a group of designers focusing on achieving their best version to create unique and quality images and illustrations for our clients.
+        </p>
+        <p className="mt-3">
+          I like to travel and explore new cities; and I love watching movies, football and video games.
         </p>
         <div className="blobs-container available mt-4">
           <div className='blob red'></div>

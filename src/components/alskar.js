@@ -28,7 +28,7 @@ export default function Alskar() {
       </p>
       <p className="mt-2 dark:text-zinc-100">
         In 2021, I created <strong>AlskarMail</strong> to solve email marketing
-        needs.
+        needs, achieving thousands of emails sent.
       </p>
     </div>
   );
