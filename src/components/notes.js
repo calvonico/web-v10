@@ -30,21 +30,23 @@ export default function Suscripcion() {
 
 
             <h3 className="text-xl font-bold dark:text-white">
-                El titulo de la nota
+                The Challenges of Emigrating
             </h3>
         <div className="mt-1 h-24 overflow-hidden relative" style={{ boxSizing: "border-box" }}>
           <div className="dark:text-zinc-100">
-          contrenido un poco largo para poder ver que tanto se puede poner. Cuantas lineas de texto podemos poner aca y hacer el difuminado y el truncado para seguir leyendo y que se corte y el texto sigue sigue
+          Emigrating, that brave and challenging act of leaving behind the familiar to embrace the unknown, can be an exciting and transformative experience. For me, originally hailing from Buenos Aires, Argentina; and
+          {/* contrenido un poco largo para poder ver que tanto se puede poner. Cuantas lineas de texto podemos poner aca y hacer el difuminado y el truncado para seguir leyendo y que se corte y el texto sigue sigue */}
           </div>
           <div className="bg-gradient-to-t from-white dark:from-slate-950 z-10 absolute inset-0"></div>
         </div>
                 </div>
         <div className="mt-6">
         <a
-          
-          target="_blank"
-          className="flex w-full items-center justify-center rounded-xl bg-teal-600 p-2 font-semibold text-white shadow-sm hover:bg-teal-700 focus-visible:outline-offset-0 transition-colors"
+          href="/notes"
+          // target="_blank"
+          className="flex w-full items-center justify-center rounded-xl bg-teal-600 px-3 py-2 text-base font-semibold text-white shadow-sm relative overflow-hidden group hover:bg-gradient-to-r hover:from-teal-600 hover:to-teal-700  hover:ring-2 hover:ring-offset-2 hover:ring-teal-500 dark:ring-offset-slate-950 transition-all ease-out duration-300"
         >
+          <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-96 trans ease"></span>
           Read all notes
         </a>
       </div>
