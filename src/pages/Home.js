@@ -2,7 +2,7 @@ import Alskar from "../components/alskar";
 import Bio from "../components/bio";
 import Climamap from "../components/climamap";
 import Movies from "../components/movies";
-import Series from "../components/series";
+// import Series from "../components/series";
 // import Portfolio from "../components/portfolio3";
 // import Projects from "../components/projects";
 // import Resume from "../components/resume";
@@ -34,9 +34,9 @@ export default function Home() {
               <div className="caja dark:bg-slate-950">
                 <Alskar />
               </div>
-              <div className="caja dark:bg-slate-950">
+              {/* <div className="caja dark:bg-slate-950">
                 <Series />
-              </div>
+              </div> */}
               {/* <div className="caja dark:bg-slate-950">
                 <Resume />
               </div> */}
@@ -82,9 +82,9 @@ export default function Home() {
               <div className="caja dark:bg-slate-950">
                 <Movies />
               </div>
-              <div className="caja dark:bg-slate-950">
+              {/* <div className="caja dark:bg-slate-950">
                 <Series />
-              </div>
+              </div> */}
               <div className="caja dark:bg-slate-950">
                 <Suscripcion />
               </div>
