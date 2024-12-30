@@ -315,6 +315,13 @@
   padding-top: 20px;
   padding-bottom: 73%;
 }
+.carrusel-posters-books {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 58%;
+}
 
 .posters {
   width: 10rem;
