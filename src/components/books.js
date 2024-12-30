@@ -1,6 +1,4 @@
-import poster3 from '../img/films/deadpool3.jpg'
-import poster1 from '../img/films/pikachu.jpg'
-import poster2 from '../img/films/wolfs.jpg'
+import poster1 from '../img/books/equivocado.jpg'
 
 
 import Tippy from '@tippyjs/react';
@@ -8,7 +6,7 @@ import 'tippy.js/dist/tippy.css'; // optional
 import 'tippy.js/animations/shift-toward.css';
 import 'tippy.js/themes/light-border.css';
 
-export default function Movies() {
+export default function Books() {
 
   function MovieIcon(props) {
     return (
@@ -50,30 +48,20 @@ export default function Movies() {
     <div>
       <h2 className="flex justify-center text-base font-semibold text-zinc-900 dark:text-zinc-100">
         <MovieIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Last films I've watched</span>
+        <span className="ml-3">Book I'm reading</span>
       </h2>
       <div className="mt-6">
         <div className="carrusel-posters">
-          <a href="https://letterboxd.com/calvonico/films/diary/" target='_blank' rel='noopener noreferrer'>
-          <div className="posters poster-1 shadow-xl z-10">
-              <Tippy content="Pokemon Detective Pikachu &ndash; ★★★★" theme={'light-border'} arrow={false} animation={'shift-toward'}>
-                <img src={poster1} alt="movie" />
+          <a href="#" target='_blank' rel='noopener noreferrer'>
+            <div className="posters poster-1 shadow-xl z-10">
+              <Tippy content="El Hombre Equivocado &ndash; John Katzenbach" theme={'light-border'} arrow={false} animation={'shift-toward'}>
+                <img src={poster1} alt="book" />
               </Tippy>
-            </div>
-            <div className="posters poster-2 shadow-2xl -rotate-5">
-              <Tippy content="Wolfs &ndash; ★★★★" theme={'light-border'} arrow={false} animation={'shift-toward'} >
-                <img src={poster2} alt="movie" />
-              </Tippy>
-            </div>
-            <div className="posters poster-3 shadow-2xl rotate-4">
-              <Tippy content="Deadpool & Wolverine &ndash; ★★★★1/2" theme={'light-border'} arrow={false} animation={'shift-toward'} >
-                <img src={poster3} alt="movie" />
-              </Tippy>              
             </div>
           </a>
         </div>
       </div>
-      <h5 className="flex pt-2 justify-center text-xs font-normal text-zinc-900 dark:text-zinc-100">Movies last update: December 2024</h5>
+      <h5 className="flex pt-2 justify-center text-xs font-normal text-zinc-900 dark:text-zinc-100">Last update: December 2024</h5>
     </div>
     
   );
