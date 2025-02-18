@@ -1,4 +1,4 @@
-import poster1 from '../img/books/equivocado.jpg'
+import poster1 from '../img/books/noviagitana.jpg'
 
 
 import Tippy from '@tippyjs/react';
@@ -64,7 +64,7 @@ export default function Books() {
           </a>
         </div>
       </div>
-      <h5 className="flex pt-2 justify-center text-xs font-normal text-zinc-900 dark:text-zinc-100">Last update: December 2024</h5>
+      <h5 className="flex pt-2 justify-center text-xs font-normal text-zinc-900 dark:text-zinc-100">Last update: February 2025</h5>
     </div>
     
   );
