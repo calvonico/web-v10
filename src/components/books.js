@@ -55,9 +55,9 @@ export default function Books() {
       </h2>
       <div className="mt-6">
         <div className="carrusel-posters-books">
-          <a href="#" target='_blank' rel='noopener noreferrer'>
+          <a href="https://oku.club/user/calvonico" target='_blank' rel='noopener noreferrer'>
             <div className="posters poster-1 shadow-xl z-10">
-              <Tippy content="El Hombre Equivocado &ndash; John Katzenbach" theme={'light-border'} arrow={false} animation={'shift-toward'}>
+              <Tippy content="La Red Púrpura &ndash; Carmen Mola" theme={'light-border'} arrow={false} animation={'shift-toward'}>
                 <img src={poster1} alt="book" />
               </Tippy>
             </div>
