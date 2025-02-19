@@ -1,4 +1,4 @@
-import poster1 from '../img/books/noviagitana.jpg'
+import poster1 from '../img/books/redpurpura.jpg'
 
 
 import Tippy from '@tippyjs/react';
