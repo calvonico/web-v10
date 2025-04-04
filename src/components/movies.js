@@ -1,6 +1,6 @@
-import poster1 from '../img/films/intensamente2.jpg'
-import poster2 from '../img/films/pikachu.jpg'
-import poster3 from '../img/films/wolfs.jpg'
+import poster2 from '../img/films/intensamente2.jpg'
+import poster3 from '../img/films/pikachu.jpg'
+import poster1 from '../img/films/sustancia.jpg'
 
 
 import Tippy from '@tippyjs/react';
@@ -56,24 +56,24 @@ export default function Movies() {
         <div className="carrusel-posters">
           <a href="https://letterboxd.com/calvonico/films/diary/" target='_blank' rel='noopener noreferrer'>
           <div className="posters poster-1 shadow-xl z-10">
-              <Tippy content="Inside Out 2 &ndash; ★★★★" theme={'light-border'} arrow={false} animation={'shift-toward'}>
+              <Tippy content="The Substance &ndash; ★★★1/2" theme={'light-border'} arrow={false} animation={'shift-toward'}>
                 <img src={poster1} alt="movie" />
               </Tippy>
             </div>
             <div className="posters poster-2 shadow-2xl -rotate-5">
-              <Tippy content="Pokemon Detective Pikachu &ndash; ★★★★" theme={'light-border'} arrow={false} animation={'shift-toward'} >
+              <Tippy content="Inside Out 2 &ndash; ★★★★" theme={'light-border'} arrow={false} animation={'shift-toward'} >
                 <img src={poster2} alt="movie" />
               </Tippy>
             </div>
             <div className="posters poster-3 shadow-2xl rotate-4">
-              <Tippy content="Wolfs &ndash; ★★★★" theme={'light-border'} arrow={false} animation={'shift-toward'} >
+              <Tippy content="Pokemon Detective Pikachu &ndash; ★★★★" theme={'light-border'} arrow={false} animation={'shift-toward'} >
                 <img src={poster3} alt="movie" />
               </Tippy>              
             </div>
           </a>
         </div>
       </div>
-      <h5 className="flex pt-2 justify-center text-xs font-normal text-zinc-900 dark:text-zinc-100">Movies last update: January 2025</h5>
+      <h5 className="flex pt-2 justify-center text-xs font-normal text-zinc-900 dark:text-zinc-100">Movies last update: March 2025</h5>
     </div>
     
   );
