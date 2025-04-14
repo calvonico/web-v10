@@ -31,8 +31,9 @@ export default function Home() {
               </div>
               
               <div className="caja dark:bg-slate-950">
-                <Suscripcion />
+                <SocialMedia />
               </div>
+
             </div>
             <div className="my-masonry-grid_column">
               <Climamap />
@@ -55,10 +56,10 @@ export default function Home() {
               {/* <div className="caja dark:bg-slate-950">
                 <Portfolio />
               </div> */}
-
               <div className="caja dark:bg-slate-950">
-                <SocialMedia />
+                <Suscripcion />
               </div>
+              
 
             </div>
           </div>
