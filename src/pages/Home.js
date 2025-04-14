@@ -36,9 +36,10 @@ export default function Home() {
             </div>
             <div className="my-masonry-grid_column">
               <Climamap />
-              <div className="caja dark:bg-slate-950">
+              {/* <div className="caja dark:bg-slate-950">
                 <Alskar />
-              </div><div className="caja dark:bg-slate-950">
+              </div> */}
+              <div className="caja dark:bg-slate-950">
                 <Books />
               </div>
               {/* <div className="caja dark:bg-slate-950">
@@ -75,9 +76,9 @@ export default function Home() {
               {/* <div className="caja dark:bg-slate-950">
                 <Resume />
               </div> */}
-              <div className="caja dark:bg-slate-950">
+              {/* <div className="caja dark:bg-slate-950">
                 <Alskar />
-              </div>
+              </div> */}
               {/* <div className="caja dark:bg-slate-950">
                 <Projects />
               </div> */}
