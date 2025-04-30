@@ -30,11 +30,11 @@ export default function Suscripcion() {
 
 
             <h3 className="text-xl font-bold dark:text-white">
-                The Challenges of Emigrating
+              Monday without light: the day Spain came to a standstill
             </h3>
         <div className="mt-1 h-24 overflow-hidden relative" style={{ boxSizing: "border-box" }}>
           <div className="dark:text-zinc-100">
-          Emigrating, that brave and challenging act of leaving behind the familiar to embrace the unknown, can be an exciting and transformative experience. For me, originally hailing from Buenos Aires, Argentina; and
+          On Monday, April 28, 2025, Spain, Portugal, and part of Europe experienced a massive blackout that shook us out of our routine and reminded us how fragile modern comfort can be. It was around noon when the 
           {/* contrenido un poco largo para poder ver que tanto se puede poner. Cuantas lineas de texto podemos poner aca y hacer el difuminado y el truncado para seguir leyendo y que se corte y el texto sigue sigue */}
           </div>
           <div className="bg-gradient-to-t from-white dark:from-slate-950 z-10 absolute inset-0"></div>
