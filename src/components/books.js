@@ -1,4 +1,4 @@
-import poster1 from '../img/books/redpurpura.jpg'
+import poster1 from '../img/books/imperiofinal.png'
 
 
 import Tippy from '@tippyjs/react';
@@ -57,14 +57,14 @@ export default function Books() {
         <div className="carrusel-posters-books">
           <a href="https://oku.club/user/calvonico" target='_blank' rel='noopener noreferrer'>
             <div className="posters poster-1 shadow-xl z-10">
-              <Tippy content="La Red Púrpura &ndash; Carmen Mola" theme={'light-border'} arrow={false} animation={'shift-toward'}>
+              <Tippy content="El Imperio Final &ndash; Brandon Sanderson" theme={'light-border'} arrow={false} animation={'shift-toward'}>
                 <img src={poster1} alt="book" />
               </Tippy>
             </div>
           </a>
         </div>
       </div>
-      <h5 className="flex pt-2 justify-center text-xs font-normal text-zinc-900 dark:text-zinc-100">Last update: February 2025</h5>
+      <h5 className="flex pt-2 justify-center text-xs font-normal text-zinc-900 dark:text-zinc-100">Last update: July 2025</h5>
     </div>
     
   );
