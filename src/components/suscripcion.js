@@ -22,7 +22,7 @@ export default function Suscripcion() {
     <div>
       <h2 className="flex justify-center text-base font-semibold text-zinc-900 dark:text-zinc-100">
         <EnvelopeOpenIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Subscribe to receive my updates</span>
+        <span className="ml-3">Weekly ideas in your inbox</span>
       </h2>
       <div className="mt-6">
         <form action="https://email.alskarcloud.com/subscribe" method="POST">
@@ -63,12 +63,12 @@ export default function Suscripcion() {
             type="submit"
             name="submit"
             id="submit"
-            value="Subscribe"
+            value="Get weekly updates"
             className="relative block w-full p-2 mt-3 rounded-xl bg-zinc-300 font-semibold text-zinc-900 shadow-sm overflow-hidden group hover:bg-gradient-to-r hover:from-teal-600 hover:to-teal-700  hover:ring-2 hover:ring-offset-2 hover:ring-teal-500 transition-all ease-out duration-300 hover:text-white dark:bg-zinc-700 dark:text-white dark:ring-offset-slate-950"
             style={{ cursor: "pointer" }} />
         </form>
       </div>
-      {/* { new Alert({ type: 'success', message: 'Toast Message Here', }) } */}
+      {/* { new Alert({ type: 'success', message: 'You are now subscribed!', }) } */}
     </div>
   );
 }

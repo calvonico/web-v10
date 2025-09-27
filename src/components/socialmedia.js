@@ -24,7 +24,7 @@ export default function SocialMedia() {
     <div>
       <h2 className="flex justify-center text-base font-semibold text-zinc-900 dark:text-zinc-100">
         <GloveIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">My social networks</span>
+        <span className="ml-3">Let's connect</span>
       </h2>
       <div className="iconos mt-8">
         <a href="mailto:nico@nicocalvo.com" target={"_blank"} rel={"noreferrer"}>
@@ -37,6 +37,7 @@ export default function SocialMedia() {
           <Icon className="redes" icon="bi:behance" color="var(--redsocial-behance)" height="28" />
         </a> */}
         <a href="https://instagram.com/calvonico" target={'_blank'} rel={'noreferrer'} ><Icon className="redes" icon="bi:instagram" color='var(--redsocial-instagram)' height="24" /></a>
+        <a href="https://threads.net/calvonico" target={'_blank'} rel={'noreferrer'} ><Icon className="redes" icon="bi:threads" color='var(--redsocial-instagram)' height="24" /></a>
         <a href="https://dribbble.com/calvonico" target={'_blank'} rel={'noreferrer'} >
           <Icon icon="bi:dribbble" className="redes" height="24" color="var(--redsocial-dribbble)" />
         </a>
