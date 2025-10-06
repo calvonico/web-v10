@@ -30,11 +30,11 @@ export default function Suscripcion() {
 
 
             <h3 className="text-xl font-bold dark:text-white">
-              Monday without light: the day Spain came to a standstill
+              The Invisible Magic of Great UI
             </h3>
         <div className="mt-1 h-24 overflow-hidden relative" style={{ boxSizing: "border-box" }}>
           <div className="dark:text-zinc-100">
-          On Monday, April 28, 2025, Spain, Portugal, and part of Europe experienced a massive blackout that shook us out of our routine and reminded us how fragile modern comfort can be. It was around noon when the 
+          Good design doesn’t shout —it whispers. Most people don’t notice great UI, but they instantly recognize bad one. That’s the paradox of design: when it’s done right, it becomes invisible.
           {/* contrenido un poco largo para poder ver que tanto se puede poner. Cuantas lineas de texto podemos poner aca y hacer el difuminado y el truncado para seguir leyendo y que se corte y el texto sigue sigue */}
           </div>
           <div className="bg-gradient-to-t from-white dark:from-slate-950 z-10 absolute inset-0"></div>
