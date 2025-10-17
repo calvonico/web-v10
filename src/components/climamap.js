@@ -16,11 +16,11 @@ export default function Climamap () {
                     </div>
                 </div>
                 <div className="mapa">
-                    <img src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/-8.609,41.1517,12.34,0/200x181?access_token=pk.eyJ1IjoiY2Fsdm9uaWNvIiwiYSI6ImNsZ21mbGdxdTA1a2QzZ29oOHZyOHY1dTAifQ.0ybOYfPRvPYaVmlg0QYzmg" alt="Porto Map" />
+                    <img src="../img/mapabcn.png" alt="Barcelona Map" />
                 </div>
             </div>
             <div className="caja-chica" style={{padding: "0"}}>
-                <a className="weatherwidget-io" style={{borderRadius: "12px"}} href="https://forecast7.com/en/41d16n8d63/porto/" data-label_1="OPORTO" data-label_2="WEATHER" data-icons="Climacons Animated" data-mode="Current" data-days="3" data-theme="weather_one" >OPORTO WEATHER</a>
+                <a class="weatherwidget-io" style={{borderRadius: "12px"}} href="https://forecast7.com/en/41d392d17/barcelona/" data-label_1="BARCELONA" data-label_2="WEATHER" data-icons="Climacons Animated" data-mode="Current" data-days="3" data-theme="weather_one" >BARCELONA WEATHER</a>
 
                 { !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js') }
             </div>
