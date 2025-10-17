@@ -19,7 +19,7 @@ export default function Bio() {
           Hey, I'm <strong>Nico</strong> 👋
         </h2>
         <p className="mt-1">
-          I'm a entrepeneur, designer and developer passionate about building things that help people. Born and raised in Buenos Aires, and after a couple of seasons in beautiful Porto, I now call Barcelona my home.
+          I'm a solopreneur, designer and developer passionate about building things that help people. Born and raised in Buenos Aires, and after a couple of seasons in beautiful Porto, I now call Barcelona my home.
         </p>
         {/*<p className="mt-3">
           For the last 14 years my work has consisted of marketing design: building creative assets for email, social media, websites, and more.
