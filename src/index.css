@@ -229,6 +229,17 @@
   color: var(--c1);
   position: relative;
 }
+.caja-conborde {
+  box-sizing: border-box;
+  width: auto;
+  min-width: 0em;
+  padding: 20px;
+  border-radius: 12px;
+  border: none;
+  background: var(--bg0);
+  color: var(--c1);
+  position: relative;
+}
 .dos-cajas-chicas {
   display: flex;
   gap: 22px;
@@ -377,6 +388,24 @@
   bottom: 0;
   left: 0;
   z-index: 0;
+}
+/* .fondo-degradado {.  NEW
+  background: linear-gradient(319deg, #00f7ff21 10%, #14557b05 50%),
+    linear-gradient(20deg, #339a9930 5%, #00cdbf00 40%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+} */
+.degrade-caja-1 {
+  background:linear-gradient(220deg, hsl(250deg, 75.9%, 65.9%) 0%, hsl(200deg, 92.9%, 78%, 0.1) 40%, hsl(120deg, 92.9%, 78%, 0.1) 60%, hsl(15deg, 97.8%, 64.3%) 100%);
+  border-radius: 12px;
+}
+.degrade-caja-2 {
+  box-shadow: inset 0 0 40px 2px hsl(290deg, 81.3%, 55.9%, 0.5), inset 0 0 80px 30px hsl(225deg, 91.2%, 59.8%, 0.3);
+  border-radius: 12px;
 }
 .copyright {
   margin: 0;

@@ -7,6 +7,7 @@ import Books from "../components/books";
 // import Portfolio from "../components/portfolio3";
 // import Projects from "../components/projects";
 // import Resume from "../components/resume";
+// import Buildinpublic from "../components/buildinpublic";
 import SocialMedia from "../components/socialmedia";
 import Suscripcion from "../components/suscripcion";
 import Notes from "../components/notes";
@@ -39,6 +40,17 @@ export default function Home() {
               <Climamap />
               {/* <div className="caja dark:bg-slate-950">
                 <Alskar />
+              </div> */}
+              {/* <div className="caja dark:bg-slate-950">
+                <Buildinpublic />
+              </div> */}
+              {/* ****Si quiero hacer la caja con los reflejos, tengo que poner caja-conborde y el shadow y despues los divs con los gradient****
+              <div className="caja-conborde shadow-[inset_0_0_0_1px_hsl(0deg,0%,100%,0.1)] dark:bg-gray-900">
+                aca empieza el div de gradient ---> 
+                <div className="absolute inset-0 opacity-10 degrade-caja-1"></div> 
+                <div className="absolute inset-0 opacity-20 degrade-caja-2"></div>
+                <--- aca termina el div de gradient
+                <Books />
               </div> */}
               <div className="caja dark:bg-slate-950">
                 <Books />
@@ -82,6 +94,9 @@ export default function Home() {
               </div> */}
               {/* <div className="caja dark:bg-slate-950">
                 <Projects />
+              </div> */}
+              {/* <div className="caja dark:bg-slate-950">
+                <Buildinpublic />
               </div> */}
               <div className="caja dark:bg-slate-950">
                   <Notes />
