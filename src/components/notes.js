@@ -37,7 +37,7 @@ export default function Suscripcion() {
           Good design doesn’t shout —it whispers. Most people don’t notice great UI, but they instantly recognize bad one. That’s the paradox of design: when it’s done right, it becomes invisible.
           {/* contrenido un poco largo para poder ver que tanto se puede poner. Cuantas lineas de texto podemos poner aca y hacer el difuminado y el truncado para seguir leyendo y que se corte y el texto sigue sigue */}
           </div>
-          <div className="bg-gradient-to-t from-white dark:from-slate-950 z-10 absolute inset-0"></div>
+          <div className="bg-gradient-to-t from-white dark:from-slate-900 z-10 absolute inset-0"></div>
         </div>
                 </div>
         <div className="mt-6">
