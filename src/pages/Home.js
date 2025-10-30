@@ -16,22 +16,22 @@ export default function Home() {
   return (
     <div className="css2">
       <div className="columnas-contenido">
-        <div className="cuadro-bio dark:bg-slate-950">
+        <div className="cuadro-bio dark:bg-slate-900">
           <Bio />
         </div>
         <div className="ver_desktop">
           <div className="my-masonry-grid">
             <div className="my-masonry-grid_column">
               
-               <div className="caja dark:bg-slate-950">
+               <div className="caja dark:bg-slate-900">
                 <Notes />
               </div> 
 
-              <div className="caja dark:bg-slate-950">
+              <div className="caja dark:bg-slate-900">
                 <Movies />
               </div>
               
-              <div className="caja dark:bg-slate-950">
+              <div className="caja dark:bg-slate-900">
                 <SocialMedia />
               </div>
 
@@ -52,7 +52,7 @@ export default function Home() {
                 <--- aca termina el div de gradient
                 <Books />
               </div> */}
-              <div className="caja dark:bg-slate-950">
+              <div className="caja dark:bg-slate-900">
                 <Books />
               </div>
               {/* <div className="caja dark:bg-slate-950">
@@ -68,7 +68,7 @@ export default function Home() {
               {/* <div className="caja dark:bg-slate-950">
                 <Portfolio />
               </div> */}
-              <div className="caja dark:bg-slate-950">
+              <div className="caja dark:bg-slate-900">
                 <Suscripcion />
               </div>
               
@@ -98,22 +98,22 @@ export default function Home() {
               {/* <div className="caja dark:bg-slate-950">
                 <Buildinpublic />
               </div> */}
-              <div className="caja dark:bg-slate-950">
+              <div className="caja dark:bg-slate-900">
                   <Notes />
                 </div>
-              <div className="caja dark:bg-slate-950">
+              <div className="caja dark:bg-slate-900">
                 <Movies />
               </div>
-              <div className="caja dark:bg-slate-950">
+              <div className="caja dark:bg-slate-900">
                 <Books />
               </div>
               {/* <div className="caja dark:bg-slate-950">
                 <Series />
               </div> */}
-              <div className="caja dark:bg-slate-950">
+              <div className="caja dark:bg-slate-900">
                 <Suscripcion />
               </div>
-              <div className="caja dark:bg-slate-950">
+              <div className="caja dark:bg-slate-900">
                 <SocialMedia />
               </div>
             </div>

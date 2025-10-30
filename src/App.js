@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <div className="contenedor bg-neutral-100 dark:bg-slate-900">
+      <div className="contenedor bg-neutral-100 dark:bg-slate-950">
         <Suspense fallback={<Loading />}>
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
