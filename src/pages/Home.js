@@ -33,7 +33,7 @@ export default function Home() {
               </div>
               
               <div className="caja dark:bg-slate-900">
-                <SocialMedia />
+                <Suscripcion />
               </div>
 
             </div>
@@ -73,7 +73,7 @@ export default function Home() {
                 <Portfolio />
               </div> */}
               <div className="caja dark:bg-slate-900">
-                <Suscripcion />
+                <SocialMedia />
               </div>
               
 
