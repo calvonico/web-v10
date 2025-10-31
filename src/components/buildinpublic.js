@@ -1,101 +1,76 @@
-// import { ChevronRightIcon } from '@heroicons/react/20/solid'
+import logoCine from '../img/cine.svg'
+import logoDCA from '../img/dca.svg'
+import logoAlskar from '../img/alskar.svg'
+import logoComer from '../img/comer.svg'
+import logoVenmo from "../img/venmo.svg";
 
 export default function Buildinpublic () {
 
-const deployments = [
-  {
-    id: 1,
-    href: '#',
-    projectName: 'ios-app',
-    teamName: 'Planetaria',
-    status: 'offline',
-    statusText: 'Initiated 1m 32s ago',
-    description: 'Deploys from GitHub',
-    environment: 'Preview',
-  },
-  {
-    id: 2,
-    href: '#',
-    projectName: 'mobile-api',
-    teamName: 'Planetaria',
-    status: 'online',
-    statusText: 'Deployed 3m ago',
-    description: 'Deploys from GitHub',
-    environment: 'Production',
-  },
-  {
-    id: 3,
-    href: '#',
-    projectName: 'tailwindcss.com',
-    teamName: 'Tailwind Labs',
-    status: 'offline',
-    statusText: 'Deployed 3h ago',
-    description: 'Deploys from GitHub',
-    environment: 'Preview',
-  },
-  {
-    id: 4,
-    href: '#',
-    projectName: 'api.protocol.chat',
-    teamName: 'Protocol',
-    status: 'error',
-    statusText: 'Failed to deploy 6d ago',
-    description: 'Deploys from GitHub',
-    environment: 'Preview',
-  },
-]
+      const projects = [
+        {
+          company: 'Mero Home', 
+          title: '',
+          logo: logoAlskar,
+          start: '2009',
+          end: {
+            label: 'Present',
+            dateTime: new Date().getFullYear(),
+          },
+        },
+        {
+          company: "PayPal / Venmo",
+          title: "Visual Designer",
+          logo: logoVenmo,
+          start: "2021",
+          end: "2022",
+        },
+
+      ]
 
     return (
-    <ul role="list" className="divide-y divide-gray-100 dark:divide-white/5">
-      {deployments.map((deployment) => (
-        <li key={deployment.id} className="relative flex items-center space-x-4 py-4">
-          <div className="min-w-0 flex-auto">
-            <div className="flex items-center gap-x-3">
-              {deployment.status === 'offline' ? (
-                <div className="flex-none rounded-full bg-gray-100/10 p-1 text-gray-500 dark:bg-white/10">
-                  <div className="size-2 rounded-full bg-current" />
-                </div>
-              ) : null}
-              {deployment.status === 'online' ? (
-                <div className="flex-none rounded-full bg-green-100 p-1 text-green-500 dark:bg-green-400/20 dark:text-green-400">
-                  <div className="size-2 rounded-full bg-current" />
-                </div>
-              ) : null}
-              {deployment.status === 'error' ? (
-                <div className="flex-none rounded-full bg-rose-100 p-1 text-rose-500 dark:bg-rose-400/20 dark:text-rose-400">
-                  <div className="size-2 rounded-full bg-current" />
-                </div>
-              ) : null}
-              <h2 className="min-w-0 text-sm/6 font-semibold text-gray-900 dark:text-white">
-                <a href={deployment.href} className="flex gap-x-2">
-                  <span className="truncate">{deployment.teamName}</span>
-                  <span className="text-gray-500 dark:text-gray-400">/</span>
-                  <span className="whitespace-nowrap">{deployment.projectName}</span>
-                  <span className="absolute inset-0" />
-                </a>
-              </h2>
-            </div>
-            <div className="mt-3 flex items-center gap-x-2.5 text-xs/5 text-gray-500 dark:text-gray-400">
-              <p className="truncate">{deployment.description}</p>
-              <svg viewBox="0 0 2 2" className="size-0.5 flex-none fill-gray-500 dark:fill-gray-300">
-                <circle r={1} cx={1} cy={1} />
-              </svg>
-              <p className="whitespace-nowrap">{deployment.statusText}</p>
-            </div>
-          </div>
-          {deployment.environment === 'Preview' ? (
-            <div className="flex-none rounded-full bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 inset-ring inset-ring-gray-500/10 dark:bg-gray-400/10 dark:text-gray-400 dark:inset-ring-gray-400/20">
-              {deployment.environment}
-            </div>
-          ) : null}
-          {deployment.environment === 'Production' ? (
-            <div className="flex-none rounded-full bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-700 inset-ring inset-ring-indigo-700/10 dark:bg-indigo-400/10 dark:text-indigo-400 dark:inset-ring-indigo-400/30">
-              {deployment.environment}
-            </div>
-          ) : null}
-          {/* <ChevronRightIcon aria-hidden="true" className="size-2 flex-none text-gray-400" /> */}
-        </li>
-      ))}
-    </ul>
-  )
+        <div>
+
+        <h2 className="flex justify-center text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" className='fill-zinc-100 stroke-zinc-400  dark:fill-zinc-100/10 dark:stroke-zinc-500' />
+          </svg>
+          <span className="ml-3">Apps I'm building</span>
+        </h2>
+        <ol className="mt-6 space-y-4">
+          {projects.map((role, roleIndex) => (
+            <li key={roleIndex} className="flex gap-4">
+              <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                <img src={role.logo} alt="" className="h-7 w-7" unoptimized="true" />
+              </div>
+              <dl className="flex flex-auto flex-wrap gap-x-2">
+                <dt className="sr-only">Company</dt>
+                <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                  {role.company}
+                </dd>
+                <dt className="sr-only">Role</dt>
+                <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+                  {role.title}
+                </dd>
+                <dt className="sr-only">Date</dt>
+                <dd
+                  className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+                  aria-label={`${role.start.label ?? role.start} until ${
+                    role.end.label ?? role.end
+                  }`}
+                >
+                  <time dateTime={role.start.dateTime ?? role.start}>
+                    {role.start.label ?? role.start}
+                  </time>{' '}
+                  <span aria-hidden="true">—</span>{' '}
+                  <time dateTime={role.end.dateTime ?? role.end}>
+                    {role.end.label ?? role.end}
+                  </time>
+                </dd>
+              </dl>
+            </li>
+          ))}
+        </ol>
+
+      </div>
+    )
 }

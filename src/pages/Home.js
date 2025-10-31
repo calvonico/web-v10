@@ -12,6 +12,7 @@ import SocialMedia from "../components/socialmedia";
 import Suscripcion from "../components/suscripcion";
 import Notes from "../components/notes";
 
+
 export default function Home() {
   return (
     <div className="css2">
@@ -38,10 +39,10 @@ export default function Home() {
             </div>
             <div className="my-masonry-grid_column">
               <Climamap />
-              {/* <div className="caja dark:bg-slate-950">
+              {/* <div className="caja dark:bg-slate-900">
                 <Alskar />
               </div> */}
-              {/* <div className="caja dark:bg-slate-950">
+              {/* <div className="caja dark:bg-slate-900">
                 <Buildinpublic />
               </div> */}
               {/* ****Si quiero hacer la caja con los reflejos, tengo que poner caja-conborde y el shadow y despues los divs con los gradient****
@@ -52,20 +53,23 @@ export default function Home() {
                 <--- aca termina el div de gradient
                 <Books />
               </div> */}
+              {/* <div className="caja dark:bg-slate-900">
+                <Buildinpublic />
+              </div> */}
               <div className="caja dark:bg-slate-900">
                 <Books />
               </div>
-              {/* <div className="caja dark:bg-slate-950">
+              {/* <div className="caja dark:bg-slate-900">
                 <Series />
               </div> */}
-              {/* <div className="caja dark:bg-slate-950">
+              {/* <div className="caja dark:bg-slate-900">
                 <Resume />
               </div> */}
 
-              {/* <div className="caja dark:bg-slate-950">
+              {/* <div className="caja dark:bg-slate-900">
                 <Projects />
               </div> */}
-              {/* <div className="caja dark:bg-slate-950">
+              {/* <div className="caja dark:bg-slate-900">
                 <Portfolio />
               </div> */}
               <div className="caja dark:bg-slate-900">
@@ -75,7 +79,7 @@ export default function Home() {
 
             </div>
           </div>
-              {/* <div className="cuadro-bio dark:bg-slate-950">
+              {/* <div className="cuadro-bio dark:bg-slate-900">
                 <SocialMedia />
               </div> */}
         </div>
