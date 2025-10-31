@@ -32,10 +32,10 @@ export default function Bio() {
         <p className="mt-3">
           I like to travel and explore new cities; and I love watching movies, Formula 1, football and video games.
         </p>
-        <div className="blobs-container available mt-4">
+        {/* <div className="blobs-container available mt-4">
           <div className='blob yellow'></div>
           <div className="text-sm text-gray-500">Building</div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
