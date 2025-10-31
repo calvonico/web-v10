@@ -33,7 +33,7 @@ export default function Buildinpublic () {
         <ol className="mt-6 space-y-4">
           {projects.map((role, roleIndex) => (
             <li key={roleIndex} className="flex gap-4">
-              <a href="#" className='flex flex-auto p-2 -m-2 gap-4 rounded-lg hover:bg-teal-50 transition-colors'>
+              <a href="#" className='flex flex-auto p-2 -m-2 gap-4 rounded-lg hover:bg-teal-50 dark:hover:bg-teal-950 transition-colors'>
                 <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                   <img src={role.logo} alt="" className="h-7 w-7" unoptimized="true" />
                 </div>
