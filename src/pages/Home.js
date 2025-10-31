@@ -5,7 +5,7 @@ import Movies from "../components/movies";
 import Books from "../components/books";
 // import Series from "../components/series";
 // import Portfolio from "../components/portfolio3";
-import Projects from "../components/projects";
+// import Projects from "../components/projects";
 // import Resume from "../components/resume";
 import Buildinpublic from "../components/buildinpublic";
 import SocialMedia from "../components/socialmedia";
@@ -96,9 +96,9 @@ export default function Home() {
               {/* <div className="caja dark:bg-slate-950">
                 <Alskar />
               </div> */}
-              <div className="caja dark:bg-slate-950">
+              {/* <div className="caja dark:bg-slate-950">
                 <Projects />
-              </div>
+              </div> */}
               <div className="caja dark:bg-slate-900">
                 <Buildinpublic />
               </div>
