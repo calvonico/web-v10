@@ -9,14 +9,14 @@ export default function Buildinpublic () {
           title: 'Your home. Organized.',
           logo: logoMero,
           start: "",
-          end: "Building"
+          end: "In progress"
         },
         {
           company: "Webio",
           title: "Your own personal corner on the internet",
           logo: logoWebio,
           start: "",
-          end: "Building",
+          end: "In progress",
         },
 
       ]
