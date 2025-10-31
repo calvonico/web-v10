@@ -30,11 +30,11 @@ export default function Suscripcion() {
 
 
             <h3 className="text-xl font-bold dark:text-white">
-              The Invisible Magic of Great UI
+              The silent adventure of building apps alone
             </h3>
         <div className="mt-1 h-24 overflow-hidden relative" style={{ boxSizing: "border-box" }}>
           <div className="dark:text-zinc-100">
-          Good design doesn’t shout —it whispers. Most people don’t notice great UI, but they instantly recognize bad one. That’s the paradox of design: when it’s done right, it becomes invisible.
+          Most people imagine solo app-building as something romantic. But the truth is, building a product alone is not just execution. It’s learning to sit with doubt and still keep typing.
           {/* contrenido un poco largo para poder ver que tanto se puede poner. Cuantas lineas de texto podemos poner aca y hacer el difuminado y el truncado para seguir leyendo y que se corte y el texto sigue sigue */}
           </div>
           <div className="bg-gradient-to-t from-white dark:from-slate-900 z-10 absolute inset-0"></div>
