@@ -22,7 +22,7 @@ export default function SocialMedia() {
 
   return (
     <div>
-      <h2 className="flex justify-center text-base font-semibold text-zinc-900 dark:text-zinc-100">
+      <h2 className="flex justify-left text-base font-semibold text-zinc-900 dark:text-zinc-100">
         <GloveIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Let's connect</span>
       </h2>

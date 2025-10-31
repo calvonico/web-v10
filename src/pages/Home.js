@@ -5,9 +5,9 @@ import Movies from "../components/movies";
 import Books from "../components/books";
 // import Series from "../components/series";
 // import Portfolio from "../components/portfolio3";
-// import Projects from "../components/projects";
+import Projects from "../components/projects";
 // import Resume from "../components/resume";
-// import Buildinpublic from "../components/buildinpublic";
+import Buildinpublic from "../components/buildinpublic";
 import SocialMedia from "../components/socialmedia";
 import Suscripcion from "../components/suscripcion";
 import Notes from "../components/notes";
@@ -53,9 +53,9 @@ export default function Home() {
                 <--- aca termina el div de gradient
                 <Books />
               </div> */}
-              {/* <div className="caja dark:bg-slate-900">
+              <div className="caja dark:bg-slate-900">
                 <Buildinpublic />
-              </div> */}
+              </div>
               <div className="caja dark:bg-slate-900">
                 <Books />
               </div>
@@ -96,12 +96,12 @@ export default function Home() {
               {/* <div className="caja dark:bg-slate-950">
                 <Alskar />
               </div> */}
-              {/* <div className="caja dark:bg-slate-950">
+              <div className="caja dark:bg-slate-950">
                 <Projects />
-              </div> */}
-              {/* <div className="caja dark:bg-slate-950">
+              </div>
+              <div className="caja dark:bg-slate-900">
                 <Buildinpublic />
-              </div> */}
+              </div>
               <div className="caja dark:bg-slate-900">
                   <Notes />
                 </div>

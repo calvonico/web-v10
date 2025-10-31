@@ -33,7 +33,7 @@ export default function Bio() {
           I like to travel and explore new cities; and I love watching movies, Formula 1, football and video games.
         </p>
         <div className="blobs-container available mt-4">
-          <div className='blob green'></div>
+          <div className='blob yellow'></div>
           <div className="text-sm text-gray-500">Building</div>
         </div>
       </div>
