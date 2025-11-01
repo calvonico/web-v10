@@ -13,7 +13,7 @@ export default function Buildinpublic () {
         },
         {
           company: "Webio",
-          title: "Your own personal corner on the internet",
+          title: "Your own corner on the internet",
           logo: logoWebio,
           start: "",
           end: "In progress",
