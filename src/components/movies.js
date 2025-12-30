@@ -73,7 +73,7 @@ export default function Movies() {
           </a>
         </div>
       </div>
-      <h5 className="flex pt-2 justify-center text-xs font-normal text-zinc-900 dark:text-zinc-100">Movies last update: November 2025</h5>
+      <h5 className="flex pt-2 justify-center text-xs font-normal text-zinc-900 dark:text-zinc-100">Movies last update: December 2025</h5>
     </div>
     
   );
