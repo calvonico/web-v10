@@ -1,6 +1,6 @@
-import poster2 from '../img/films/superman.jpg'
-import poster1 from '../img/films/dune2.jpg'
-import poster3 from '../img/films/fantastic4.jpg'
+import poster2 from '../img/films/knivesout.jpg'
+import poster1 from '../img/films/prisoners.jpg'
+import poster3 from '../img/films/dune2.jpg'
 
 
 import Tippy from '@tippyjs/react';
@@ -56,17 +56,17 @@ export default function Movies() {
         <div className="carrusel-posters">
           <a href="https://letterboxd.com/calvonico/films/diary/" target='_blank' rel='noopener noreferrer'>
           <div className="posters poster-1 shadow-xl z-10">
-              <Tippy content="Dune Part Two &ndash; ★★★★1/2" theme={'light-border'} arrow={false} animation={'shift-toward'}>
+              <Tippy content="Prisoners &ndash; ★★★★" theme={'light-border'} arrow={false} animation={'shift-toward'}>
                 <img src={poster1} alt="movie" />
               </Tippy>
             </div>
             <div className="posters poster-2 shadow-2xl -rotate-5">
-              <Tippy content="Superman &ndash; ★★★★" theme={'light-border'} arrow={false} animation={'shift-toward'} >
+              <Tippy content="Knives Out &ndash; ★★★1/2" theme={'light-border'} arrow={false} animation={'shift-toward'} >
                 <img src={poster2} alt="movie" />
               </Tippy>
             </div>
             <div className="posters poster-3 shadow-2xl rotate-4">
-              <Tippy content="The Fantastic 4: First Steps &ndash; ★★★★" theme={'light-border'} arrow={false} animation={'shift-toward'} >
+              <Tippy content="Dune Part Two &ndash; ★★★★1/2" theme={'light-border'} arrow={false} animation={'shift-toward'} >
                 <img src={poster3} alt="movie" />
               </Tippy>
             </div>

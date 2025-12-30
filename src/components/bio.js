@@ -30,7 +30,7 @@ export default function Bio() {
           //Lately I've been working as a Creative Lead, coordinating a group of designers focusing on achieving their best version to create unique and quality images and illustrations for our clients.
         //</p> */}
         <p className="mt-3">
-          I like to travel and explore new cities; and I love watching movies, Formula 1, football and video games.
+          I like to travel and explore new cities; and love watching movies, Formula 1, football and video games.
         </p>
         {/* <div className="blobs-container available mt-4">
           <div className='blob yellow'></div>
