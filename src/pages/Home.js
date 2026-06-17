@@ -53,9 +53,9 @@ export default function Home() {
                 <--- aca termina el div de gradient
                 <Books />
               </div> */}
-              <div className="caja dark:bg-slate-900">
+              {/*<div className="caja dark:bg-slate-900">
                 <Buildinpublic />
-              </div>
+              </div>*/}
               <div className="caja dark:bg-slate-900">
                 <Books />
               </div>
@@ -99,9 +99,9 @@ export default function Home() {
               {/* <div className="caja dark:bg-slate-950">
                 <Projects />
               </div> */}
-              <div className="caja dark:bg-slate-900">
+              {/* <div className="caja dark:bg-slate-900">
                 <Buildinpublic />
-              </div>
+              </div> */}
               <div className="caja dark:bg-slate-900">
                   <Notes />
                 </div>
