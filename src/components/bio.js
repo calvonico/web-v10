@@ -19,7 +19,11 @@ export default function Bio() {
           Hey, I'm <strong>Nico</strong> 👋
         </h2>
         <p className="mt-1">
-          An Argentinian designer and creative based in Spain. For over a decade, I've worked in graphic design, digital interfaces, marketing, and digital product development. I'm passionate about building simple experiences, solving complex problems, and exploring the intersection of design, technology, and artificial intelligence. When I'm not designing, I'm probably testing new tools, working on a personal project, or following Formula 1.</p>
+          An Argentinian designer and creative based in Spain. For over a decade, I've worked in graphic design, digital interfaces, marketing, and digital product development. I'm passionate about building simple experiences, solving complex problems, and exploring the intersection of design, technology, and artificial intelligence.
+        </p>
+        <p className="mt-3">
+          When I'm not designing, I'm probably testing new tools, working on a personal project, or following Formula 1.
+        </p>
         {/*<p className='mt-3'>
           Buenos Aires ✈️ Porto ✈️ Barcelona
         </p>

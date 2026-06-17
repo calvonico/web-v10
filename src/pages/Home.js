@@ -31,10 +31,11 @@ export default function Home() {
               <div className="caja dark:bg-slate-900">
                 <Movies />
               </div>
-              
+
               <div className="caja dark:bg-slate-900">
-                <Suscripcion />
+                <SocialMedia />
               </div>
+              
 
             </div>
             <div className="my-masonry-grid_column">
@@ -73,7 +74,7 @@ export default function Home() {
                 <Portfolio />
               </div> */}
               <div className="caja dark:bg-slate-900">
-                <SocialMedia />
+                <Suscripcion />
               </div>
               
 
