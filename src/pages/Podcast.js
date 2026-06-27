@@ -1,29 +1,6 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
-
-const episodes = [
-  {
-    number: 3,
-    title: "Episodio 3",
-    description: "Descripción del tercer episodio.",
-    date: "Próximamente",
-    url: "#",
-  },
-  {
-    number: 2,
-    title: "Episodio 2",
-    description: "Descripción del segundo episodio.",
-    date: "Próximamente",
-    url: "#",
-  },
-  {
-    number: 1,
-    title: "Episodio 1",
-    description: "Descripción del primer episodio.",
-    date: "Próximamente",
-    url: "#",
-  },
-];
 
 const platforms = [
   {
@@ -107,7 +84,16 @@ function VideoIcon(props) {
 }
 
 export default function Podcast() {
-  const latestEpisodes = episodes.slice(0, 5);
+  const [episodes, setEpisodes] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/api/podcast-episodes")
+      .then((res) => res.json())
+      .then((data) => setEpisodes(data.episodes || []))
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }, []);
 
   return (
     <>
@@ -190,43 +176,53 @@ export default function Podcast() {
                 <span className="ml-3">Últimos episodios</span>
               </h2>
               <div className="mt-6 space-y-4">
-                {latestEpisodes.map((ep) => (
-                  <a
-                    key={ep.number}
-                    href={ep.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block rounded-xl p-4 ring-1 ring-inset ring-gray-200 dark:ring-gray-700 hover:ring-2 hover:ring-teal-500 transition-all duration-300 group"
-                  >
-                    <div className="flex items-start justify-between">
-                      <div>
-                        <p className="text-xs font-medium text-teal-600 dark:text-teal-400">
-                          Ep. {ep.number} &middot; {ep.date}
-                        </p>
-                        <h3 className="mt-1 text-base font-semibold text-zinc-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                          {ep.title}
-                        </h3>
-                        <p className="mt-1 text-sm text-gray-500 dark:text-zinc-400">
-                          {ep.description}
-                        </p>
+                {loading ? (
+                  <p className="text-sm text-gray-400 dark:text-zinc-500 text-center py-4">
+                    Cargando episodios...
+                  </p>
+                ) : episodes.length === 0 ? (
+                  <p className="text-sm text-gray-400 dark:text-zinc-500 text-center py-4">
+                    Próximamente
+                  </p>
+                ) : (
+                  episodes.map((ep) => (
+                    <a
+                      key={ep.number}
+                      href={ep.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block rounded-xl p-4 ring-1 ring-inset ring-gray-200 dark:ring-gray-700 hover:ring-2 hover:ring-teal-500 transition-all duration-300 group"
+                    >
+                      <div className="flex items-start justify-between">
+                        <div>
+                          <p className="text-xs font-medium text-teal-600 dark:text-teal-400">
+                            Ep. {ep.number} &middot; {ep.date} &middot; {ep.duration} min
+                          </p>
+                          <h3 className="mt-1 text-base font-semibold text-zinc-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                            {ep.title}
+                          </h3>
+                          <p className="mt-1 text-sm text-gray-500 dark:text-zinc-400">
+                            {ep.description}
+                          </p>
+                        </div>
+                        <div className="ml-4 flex-shrink-0 mt-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            className="w-8 h-8 text-teal-600 dark:text-teal-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        </div>
                       </div>
-                      <div className="ml-4 flex-shrink-0 mt-1">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          className="w-8 h-8 text-teal-600 dark:text-teal-400 opacity-0 group-hover:opacity-100 transition-opacity"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </a>
-                ))}
+                    </a>
+                  ))
+                )}
               </div>
             </div>
 
