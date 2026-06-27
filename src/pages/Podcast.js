@@ -3,9 +3,23 @@ import { Icon } from "@iconify/react";
 
 const episodes = [
   {
+    number: 3,
+    title: "Episodio 3",
+    description: "Descripción del tercer episodio.",
+    date: "Próximamente",
+    url: "#",
+  },
+  {
+    number: 2,
+    title: "Episodio 2",
+    description: "Descripción del segundo episodio.",
+    date: "Próximamente",
+    url: "#",
+  },
+  {
     number: 1,
     title: "Episodio 1",
-    description: "Descripción del primer episodio del podcast.",
+    description: "Descripción del primer episodio.",
     date: "Próximamente",
     url: "#",
   },
@@ -32,26 +46,6 @@ const platforms = [
   },
 ];
 
-function MicrophoneIcon(props) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-      {...props}
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z"
-        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-      />
-    </svg>
-  );
-}
-
 function HeadphonesIcon(props) {
   return (
     <svg
@@ -72,7 +66,49 @@ function HeadphonesIcon(props) {
   );
 }
 
+function MicrophoneIcon(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      {...props}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z"
+        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+      />
+    </svg>
+  );
+}
+
+function VideoIcon(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      {...props}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"
+        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+      />
+    </svg>
+  );
+}
+
 export default function Podcast() {
+  const latestEpisodes = episodes.slice(0, 5);
+
   return (
     <>
       <div className="flex items-center absolute top-4 left-4 text-gray-500 z-10">
@@ -109,14 +145,18 @@ export default function Podcast() {
             {/* Hero */}
             <div className="cuadro-bio dark:bg-slate-900 text-center">
               <div className="flex flex-col items-center py-6">
-                <div className="w-16 h-16 rounded-2xl bg-teal-600 flex items-center justify-center mb-4">
-                  <MicrophoneIcon className="h-8 w-8 !fill-teal-600 !stroke-white" />
+                <div className="w-28 h-28 rounded-2xl overflow-hidden mb-5">
+                  <img
+                    src="https://placehold.co/224x224/0d9488/white?text=DP"
+                    alt="Desde el Paddock"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-                  Tiempo de Fogón
+                  Desde el Paddock
                 </h1>
                 <p className="mt-4 max-w-xl text-base text-gray-500 dark:text-zinc-400">
-                  Un podcast donde conversamos sobre diseño, tecnología, proyectos personales y todo lo que se cruza en el camino. Charlas sin guión, con la naturalidad de una conversación alrededor del fuego.
+                  Descripción del podcast. Editá este texto en src/pages/Podcast.js
                 </p>
               </div>
             </div>
@@ -143,14 +183,14 @@ export default function Podcast() {
               </div>
             </div>
 
-            {/* Episodios */}
-            <div className="caja dark:bg-slate-900 mt-6 mb-6">
+            {/* Últimos episodios */}
+            <div className="caja dark:bg-slate-900 mt-6">
               <h2 className="flex justify-left text-base font-semibold text-zinc-900 dark:text-zinc-100">
                 <MicrophoneIcon className="h-6 w-6 flex-none" />
-                <span className="ml-3">Episodios</span>
+                <span className="ml-3">Últimos episodios</span>
               </h2>
               <div className="mt-6 space-y-4">
-                {episodes.map((ep) => (
+                {latestEpisodes.map((ep) => (
                   <a
                     key={ep.number}
                     href={ep.url}
@@ -187,6 +227,19 @@ export default function Podcast() {
                     </div>
                   </a>
                 ))}
+              </div>
+            </div>
+
+            {/* Reels / Shorts */}
+            <div className="caja dark:bg-slate-900 mt-6 mb-6">
+              <h2 className="flex justify-left text-base font-semibold text-zinc-900 dark:text-zinc-100">
+                <VideoIcon className="h-6 w-6 flex-none" />
+                <span className="ml-3">Reels & Shorts</span>
+              </h2>
+              <div className="mt-6">
+                <p className="text-sm text-gray-400 dark:text-zinc-500 text-center py-8">
+                  Próximamente
+                </p>
               </div>
             </div>
           </motion.div>
