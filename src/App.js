@@ -16,6 +16,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 export default function App() {
   const Home = lazy(() => import("./pages/Home"));
   const Wallet = lazy(() => import("./pages/walletApp"));
+  const Podcast = lazy(() => import("./pages/Podcast"));
   const location = useLocation();
 
   return (
@@ -26,6 +27,7 @@ export default function App() {
             <Routes location={location} key={location.pathname}>
               <Route exact path="/" element={<Home />} />
               <Route path="/work/wallet-app" element={<Wallet />} />
+              <Route path="/podcast" element={<Podcast />} />
             </Routes>
           </AnimatePresence>
         </Suspense>
