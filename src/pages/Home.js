@@ -11,6 +11,7 @@ import Buildinpublic from "../components/buildinpublic";
 import SocialMedia from "../components/socialmedia";
 import Suscripcion from "../components/suscripcion";
 import Notes from "../components/notes";
+import PodcastPlayer from "../components/podcastplayer";
 
 
 export default function Home() {
@@ -40,6 +41,9 @@ export default function Home() {
             </div>
             <div className="my-masonry-grid_column">
               <Climamap />
+              <div className="caja dark:bg-slate-900">
+                <PodcastPlayer />
+              </div>
               {/* <div className="caja dark:bg-slate-900">
                 <Alskar />
               </div> */}
@@ -108,6 +112,9 @@ export default function Home() {
                 </div>
               <div className="caja dark:bg-slate-900">
                 <Movies />
+              </div>
+              <div className="caja dark:bg-slate-900">
+                <PodcastPlayer />
               </div>
               <div className="caja dark:bg-slate-900">
                 <Books />
