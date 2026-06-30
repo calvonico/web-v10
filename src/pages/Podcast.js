@@ -7,19 +7,19 @@ const platforms = [
   {
     name: "Spotify",
     icon: "bi:spotify",
-    url: "#",
+    url: "https://open.spotify.com/show/76Qh4RfixIDxRZc247h0zy?si=80436c0551684351",
     color: "#1DB954",
   },
   {
     name: "Apple Podcasts",
     icon: "simple-icons:applepodcasts",
-    url: "#",
+    url: "https://podcasts.apple.com/es/podcast/desde-el-paddock/id1530044342",
     color: "#D56DFB",
   },
   {
     name: "YouTube",
     icon: "bi:youtube",
-    url: "#",
+    url: "https://www.youtube.com/@desdeelpaddockpodcast",
     color: "#FF0000",
   },
 ];
@@ -132,7 +132,7 @@ export default function Podcast() {
             {/* Hero */}
             <div className="cuadro-bio dark:bg-slate-900 text-center">
               <div className="flex flex-col items-center py-6">
-                <div className="w-40 h-40 rounded-2xl overflow-hidden mb-5">
+                <div className="w-48 h-48 rounded-2xl overflow-hidden mb-5">
                   <img
                     src={coverPic}
                     alt="Desde el Paddock"
