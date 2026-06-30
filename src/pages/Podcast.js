@@ -132,7 +132,7 @@ export default function Podcast() {
             {/* Hero */}
             <div className="cuadro-bio dark:bg-slate-900 text-center">
               <div className="flex flex-col items-center py-6">
-                <div className="w-28 h-28 rounded-2xl overflow-hidden mb-5">
+                <div className="w-40 h-40 rounded-2xl overflow-hidden mb-5">
                   <img
                     src={coverPic}
                     alt="Desde el Paddock"
