@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
+import coverPic from '../img/podcast.jpeg'
 
 const platforms = [
   {
@@ -133,7 +134,7 @@ export default function Podcast() {
               <div className="flex flex-col items-center py-6">
                 <div className="w-28 h-28 rounded-2xl overflow-hidden mb-5">
                   <img
-                    src="https://placehold.co/224x224/0d9488/white?text=DP"
+                    src={coverPic}
                     alt="Desde el Paddock"
                     className="w-full h-full object-cover"
                   />
@@ -142,7 +143,7 @@ export default function Podcast() {
                   Desde el Paddock
                 </h1>
                 <p className="mt-4 max-w-xl text-base text-gray-500 dark:text-zinc-400">
-                  Descripción del podcast. Editá este texto en src/pages/Podcast.js
+                  “Desde el Paddock” es tu pase directo al corazón de la Fórmula 1. Análisis, historias y todo lo que no se ve en la transmisión: estrategias, polémicas y la vida dentro del paddock. Si te apasiona la F1, este es tu lugar.
                 </p>
               </div>
             </div>
