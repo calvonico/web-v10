@@ -36,9 +36,11 @@ export default function Suscripcion() {
         <span className="ml-3">Latest note</span>
       </h2>
       <div className="mt-6">
-        <h3 className="text-xl font-bold dark:text-white">
-          {note?.title || "Loading..."}
-        </h3>
+        <a href={note?.slug ? `/notes/${note.slug}` : "#"} className="group">
+          <h3 className="text-xl font-bold dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+            {note?.title || "Loading..."}
+          </h3>
+        </a>
         <div
           className="mt-1 h-24 overflow-hidden relative"
           style={{ boxSizing: "border-box" }}
@@ -51,7 +53,7 @@ export default function Suscripcion() {
       </div>
       <div className="mt-6">
         <a
-          href={note?.slug ? `/notes/${note.slug}` : "/notes"}
+          href="/notes"
           className="flex w-full items-center justify-center rounded-xl bg-teal-600 px-3 py-2 text-base font-semibold text-white shadow-sm relative overflow-hidden group hover:bg-gradient-to-r hover:from-teal-600 hover:to-teal-700  hover:ring-2 hover:ring-offset-2 hover:ring-teal-500 dark:ring-offset-slate-950 transition-all ease-out duration-300"
         >
           <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-96 trans ease"></span>
