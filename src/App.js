@@ -36,6 +36,13 @@ export default function App() {
           <p className="copyright dark:text-zinc-300">
             Nico Calvo © {new Date().getFullYear()} &ndash; v10
           </p>
+          <p className="copyright dark:text-zinc-300 text-xs opacity-70">
+            Movie data and posters from{' '}
+            <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">
+              TMDb
+            </a>
+            . This product uses the TMDb API but is not endorsed or certified by TMDb.
+          </p>
         </div>
         <div className="fondo-degradado"></div>
       </div>
