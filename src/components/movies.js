@@ -39,7 +39,7 @@ export default function Movies() {
   }
 
   const lastUpdate = films[0]?.watchedDate
-    ? new Date(films[0].watchedDate).toLocaleDateString('es-AR', {
+    ? new Date(films[0].watchedDate).toLocaleDateString('en-US', {
         month: 'long',
         year: 'numeric',
       })

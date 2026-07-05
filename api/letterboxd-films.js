@@ -47,8 +47,9 @@ export default async function handler(req, res) {
       tmdbId: extractTag(item, "tmdb:movieId"),
       link: extractTag(item, "link"),
       watchedDate: extractTag(item, "letterboxd:watchedDate"),
+      rewatch: extractTag(item, "letterboxd:rewatch"),
     }))
-    .filter((entry) => entry.title && entry.tmdbId)
+    .filter((entry) => entry.title && entry.tmdbId && entry.rewatch !== "Yes")
     .slice(0, FILM_COUNT);
 
   const films = await Promise.all(
