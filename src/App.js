@@ -41,7 +41,7 @@ export default function App() {
             <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">
               TMDb
             </a>
-            . This product uses the TMDb API but is not endorsed or certified by TMDb.
+            . This website uses the TMDb API but is not endorsed or certified by TMDb.
           </p>
         </div>
         <div className="fondo-degradado"></div>
