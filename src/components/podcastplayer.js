@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-
 function PodcastIcon(props) {
   return (
     <svg
@@ -21,21 +19,6 @@ function PodcastIcon(props) {
 }
 
 export default function PodcastPlayer() {
-  const [episodeId, setEpisodeId] = useState(null);
-
-  useEffect(() => {
-    fetch("/api/podcast-episodes")
-      .then((res) => res.json())
-      .then((data) => {
-        const latest = data.episodes?.[0];
-        if (latest?.url) {
-          const id = latest.url.split("/episode/")[1]?.split("?")[0];
-          if (id) setEpisodeId(id);
-        }
-      })
-      .catch(() => {});
-  }, []);
-
   return (
     <div>
       <h2 className="flex justify-left text-base font-semibold text-zinc-900 dark:text-zinc-100">
@@ -47,19 +30,15 @@ export default function PodcastPlayer() {
         </span>
       </h2>
       <div className="mt-6">
-        {episodeId ? (
-          <iframe
-            src={`https://open.spotify.com/embed/episode/${episodeId}?utm_source=generator`}
-            width="100%"
-            height="152"
-            frameBorder="0"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-            style={{ borderRadius: "12px" }}
-          />
-        ) : (
-          <div className="h-[152px] rounded-xl bg-zinc-100 dark:bg-slate-800 animate-pulse" />
-        )}
+        <iframe
+          src="https://open.spotify.com/embed/show/76Qh4RfixIDxRZc247h0zy?utm_source=generator"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+          style={{ borderRadius: "12px" }}
+        />
       </div>
     </div>
   );

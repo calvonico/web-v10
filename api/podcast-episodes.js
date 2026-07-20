@@ -21,17 +21,34 @@ async function getAccessToken() {
 }
 
 export default async function handler(req, res) {
-  const token = await getAccessToken();
+  if (!process.env.SPOTIFY_CLIENT_ID || !process.env.SPOTIFY_CLIENT_SECRET) {
+    return res.status(500).json({ error: "Missing Spotify credentials" });
+  }
 
-  const response = await fetch(
-    `https://api.spotify.com/v1/shows/${SHOW_ID}/episodes?market=ES&limit=5`,
-    {
-      headers: { Authorization: `Bearer ${token}` },
-    }
-  );
+  let token;
+  try {
+    token = await getAccessToken();
+  } catch (e) {
+    return res.status(500).json({ error: "Auth failed", detail: e.message });
+  }
+
+  if (!token) {
+    return res.status(500).json({ error: "No token returned from Spotify" });
+  }
+
+  let response;
+  try {
+    response = await fetch(
+      `https://api.spotify.com/v1/shows/${SHOW_ID}/episodes?market=ES&limit=5`,
+      { headers: { Authorization: `Bearer ${token}` } }
+    );
+  } catch (e) {
+    return res.status(500).json({ error: "Spotify fetch failed", detail: e.message });
+  }
 
   if (!response.ok) {
-    return res.status(response.status).json({ error: "Spotify API error" });
+    const body = await response.text();
+    return res.status(response.status).json({ error: "Spotify API error", detail: body });
   }
 
   const data = await response.json();
