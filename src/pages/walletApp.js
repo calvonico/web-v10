@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import hero from '../img/work/TG/teengo_hero.png'
 import grafico1 from '../img/work/TG/grafico-1.png'
@@ -28,9 +29,9 @@ export default function walletApp() {
             d="M15.75 19.5L8.25 12l7.5-7.5"
           />
         </svg>
-        <a href="/">
-          <p className="ms-1 dark:text-white">Home</p>
-        </a>
+        <Link to="/work">
+          <p className="ms-1 dark:text-white">Work</p>
+        </Link>
       </div>
       {/* fin boton home  */}
       <div className="css2">

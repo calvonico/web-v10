@@ -13,19 +13,22 @@ import { lazy, Suspense } from "react";
 import { AnimatePresence } from "framer-motion";
 import { Routes, Route, useLocation } from "react-router-dom";
 
+const Home = lazy(() => import("./pages/Home"));
+const Work = lazy(() => import("./pages/Work"));
+const Wallet = lazy(() => import("./pages/walletApp"));
+const Podcast = lazy(() => import("./pages/Podcast"));
+
 export default function App() {
-  const Home = lazy(() => import("./pages/Home"));
-  const Wallet = lazy(() => import("./pages/walletApp"));
-  const Podcast = lazy(() => import("./pages/Podcast"));
   const location = useLocation();
 
   return (
     <div className="App">
       <div className="contenedor bg-neutral-100 dark:bg-slate-950">
         <Suspense fallback={<Loading />}>
-          <AnimatePresence mode="wait">
+          <AnimatePresence>
             <Routes location={location} key={location.pathname}>
               <Route exact path="/" element={<Home />} />
+              <Route path="/work" element={<Work />} />
               <Route path="/work/wallet-app" element={<Wallet />} />
               <Route path="/podcast" element={<Podcast />} />
             </Routes>
