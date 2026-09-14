@@ -1,12 +1,14 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import imgTeengo from "../img/work/teengo-500x500.png";
 import imgDonation from "../img/work/donapp-500x500.png";
 import imgVenmo from "../img/work/venmo-500x500.png";
 import imgDespegar from "../img/work/despegar-500x500.png";
 
+// size controls how many grid cells a card spans in the bento layout.
+// "large" -> 2x2, "wide" -> 2x1, "small" -> 1x1 (default when omitted).
 const projects = [
   {
     name: "Wallet App",
@@ -15,6 +17,7 @@ const projects = [
     discipline: "UX/UI",
     image: imgTeengo,
     url: "/work/wallet-app",
+    size: "large",
   },
   {
     name: "NGO Donation App",
@@ -23,6 +26,7 @@ const projects = [
     discipline: "UX/UI",
     image: imgDonation,
     url: "https://www.behance.net/gallery/122906011/DonApp-UXUI-Design",
+    size: "wide",
   },
   {
     name: "Venmo",
@@ -31,6 +35,7 @@ const projects = [
     discipline: "Graphic Design",
     image: imgVenmo,
     url: "https://www.behance.net/gallery/143438131/Venmo-Graphic-UI-Design",
+    size: "small",
   },
   {
     name: "Despegar",
@@ -39,8 +44,15 @@ const projects = [
     discipline: "Graphic Design",
     image: imgDespegar,
     url: "https://www.behance.net/gallery/96941755/Despegar-APP-web",
+    size: "small",
   },
 ];
+
+const sizeClasses = {
+  large: "sm:col-span-2 sm:row-span-2",
+  wide: "sm:col-span-2",
+  small: "",
+};
 
 function isInternal(url) {
   return url.startsWith("/");
@@ -48,8 +60,6 @@ function isInternal(url) {
 
 export default function Work() {
   const [filter, setFilter] = useState("All");
-  const [hovered, setHovered] = useState(null);
-  const [coords, setCoords] = useState({ x: 0, y: 0 });
 
   const disciplines = useMemo(
     () => ["All", ...new Set(projects.map((p) => p.discipline))],
@@ -64,14 +74,9 @@ export default function Work() {
     [filter]
   );
 
-  function handleMouseMove(e) {
-    const rect = e.currentTarget.getBoundingClientRect();
-    setCoords({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-  }
-
   return (
     <div className="relative z-10 min-h-screen w-full bg-neutral-100 dark:bg-slate-950">
-      <div className="mx-auto max-w-4xl px-6 py-16 sm:py-24">
+      <div className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
         <Link
           to="/"
           className="inline-flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white transition-colors"
@@ -122,94 +127,77 @@ export default function Work() {
           </div>
         </motion.div>
 
-        <div
-          className="relative mt-8"
-          onMouseMove={handleMouseMove}
-          onMouseLeave={() => setHovered(null)}
-        >
-          <AnimatePresence>
-            {hovered && (
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 auto-rows-[16rem] gap-4">
+          {filtered.map((project, index) => {
+            const external = !isInternal(project.url);
+            const Card = (
               <motion.div
-                key={hovered.name}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.2 }}
-                className="pointer-events-none absolute z-10 hidden md:block w-64 aspect-[4/3] overflow-hidden rounded-xl shadow-2xl"
-                style={{
-                  left: coords.x + 24,
-                  top: coords.y - 140,
+                initial={{ opacity: 0, y: 32 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{
+                  duration: 0.7,
+                  delay: (index % 4) * 0.08,
+                  ease: [0.16, 1, 0.3, 1],
                 }}
+                className="group relative h-full w-full overflow-hidden rounded-2xl bg-zinc-900"
               >
                 <img
-                  src={hovered.image}
-                  alt={hovered.name}
-                  className="h-full w-full object-cover"
+                  src={project.image}
+                  alt={project.name}
+                  className="absolute inset-0 h-full w-full object-cover object-[center_75%] transition-transform duration-500 ease-out group-hover:scale-105"
                 />
-              </motion.div>
-            )}
-          </AnimatePresence>
-
-          <ul>
-            {filtered.map((project, index) => {
-              const external = !isInternal(project.url);
-              const Row = (
-                <div
-                  onMouseEnter={() => setHovered(project)}
-                  className={`group flex items-center justify-between gap-6 border-b border-zinc-200 dark:border-zinc-800 py-7 transition-opacity duration-200 ${
-                    hovered && hovered.name !== project.name
-                      ? "opacity-40"
-                      : "opacity-100"
-                  }`}
-                >
-                  <img
-                    src={project.image}
-                    alt={project.name}
-                    className="h-14 w-14 flex-none rounded-lg object-cover md:hidden"
-                  />
-                  <div className="min-w-0">
-                    <h3 className="text-xl sm:text-3xl font-semibold tracking-tight text-zinc-900 dark:text-white">
-                      {project.name}
-                    </h3>
-                    <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400 truncate">
-                      {project.description}
-                    </p>
-                  </div>
-                  <div className="flex flex-none items-center gap-4">
-                    <span className="hidden sm:inline text-xs uppercase tracking-wide text-zinc-400 dark:text-zinc-500">
-                      {project.discipline}
-                    </span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      className="h-5 w-5 text-zinc-400 transition-transform group-hover:translate-x-1 group-hover:text-zinc-900 dark:group-hover:text-white"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                      />
-                    </svg>
-                  </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-5">
+                  <span className="text-xs uppercase tracking-wide text-white/60">
+                    {project.discipline}
+                  </span>
+                  <h3 className="mt-1 text-xl font-semibold tracking-tight text-white">
+                    {project.name}
+                  </h3>
+                  <p className="mt-1 text-sm text-white/70 line-clamp-2">
+                    {project.description}
+                  </p>
                 </div>
-              );
+                <div className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white opacity-0 backdrop-blur transition-opacity group-hover:opacity-100">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    stroke="currentColor"
+                    className="h-4 w-4"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </motion.div>
+            );
 
-              return (
-                <li key={project.name}>
-                  {external ? (
-                    <a href={project.url} target="_blank" rel="noopener noreferrer">
-                      {Row}
-                    </a>
-                  ) : (
-                    <Link to={project.url}>{Row}</Link>
-                  )}
-                </li>
-              );
-            })}
-          </ul>
+            return external ? (
+              <a
+                key={project.name}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={sizeClasses[project.size] || ""}
+              >
+                {Card}
+              </a>
+            ) : (
+              <Link
+                key={project.name}
+                to={project.url}
+                className={sizeClasses[project.size] || ""}
+              >
+                {Card}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </div>
