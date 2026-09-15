@@ -51,8 +51,8 @@ const projects = [
   {
     name: "Grupo Axo",
     client: "Grupo Axo",
-    description: "Add project description here",
-    discipline: "TBD",
+    description: "Social media, video and email assets for fashion retail brands",
+    discipline: "Graphic Design",
     url: "/work/grupo-axo",
     size: "wide",
     color: "from-rose-500 to-orange-400",
@@ -60,8 +60,8 @@ const projects = [
   {
     name: "Cashi",
     client: "Cashi",
-    description: "Add project description here",
-    discipline: "TBD",
+    description: "Email marketing design and A/B testing for a digital wallet",
+    discipline: "Graphic Design",
     url: "/work/cashi",
     size: "small",
     color: "from-emerald-500 to-teal-400",
@@ -69,8 +69,8 @@ const projects = [
   {
     name: "Wally",
     client: "Wally",
-    description: "Add project description here",
-    discipline: "TBD",
+    description: "UI design for a new business line in an international payments app",
+    discipline: "UX/UI",
     url: "/work/wally",
     size: "small",
     color: "from-sky-500 to-indigo-400",
@@ -78,8 +78,8 @@ const projects = [
   {
     name: "Ingram",
     client: "Ingram",
-    description: "Add project description here",
-    discipline: "TBD",
+    description: "Digital and communication assets for a global tech distributor",
+    discipline: "Graphic Design",
     url: "/work/ingram",
     size: "small",
     color: "from-fuchsia-500 to-purple-400",
