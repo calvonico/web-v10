@@ -25,7 +25,7 @@ const projects = [
     description: "UX/UI design of an app for donation",
     discipline: "UX/UI",
     image: imgDonation,
-    url: "https://www.behance.net/gallery/122906011/DonApp-UXUI-Design",
+    url: "/work/ngo-donation-app",
     size: "wide",
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     description: "Graphic and email marketing assets",
     discipline: "Graphic Design",
     image: imgVenmo,
-    url: "https://www.behance.net/gallery/143438131/Venmo-Graphic-UI-Design",
+    url: "/work/venmo",
     size: "small",
   },
   {
@@ -43,7 +43,7 @@ const projects = [
     description: "Marketing graphic assets",
     discipline: "Graphic Design",
     image: imgDespegar,
-    url: "https://www.behance.net/gallery/96941755/Despegar-APP-web",
+    url: "/work/despegar",
     size: "small",
   },
 ];

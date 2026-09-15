@@ -16,6 +16,9 @@ import { Routes, Route, useLocation } from "react-router-dom";
 const Home = lazy(() => import("./pages/Home"));
 const Work = lazy(() => import("./pages/Work"));
 const Wallet = lazy(() => import("./pages/walletApp"));
+const NgoDonationApp = lazy(() => import("./pages/ngoDonationApp"));
+const Venmo = lazy(() => import("./pages/venmo"));
+const Despegar = lazy(() => import("./pages/despegar"));
 const Podcast = lazy(() => import("./pages/Podcast"));
 
 export default function App() {
@@ -30,6 +33,9 @@ export default function App() {
               <Route exact path="/" element={<Home />} />
               <Route path="/work" element={<Work />} />
               <Route path="/work/wallet-app" element={<Wallet />} />
+              <Route path="/work/ngo-donation-app" element={<NgoDonationApp />} />
+              <Route path="/work/venmo" element={<Venmo />} />
+              <Route path="/work/despegar" element={<Despegar />} />
               <Route path="/podcast" element={<Podcast />} />
             </Routes>
           </AnimatePresence>
