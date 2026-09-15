@@ -9,6 +9,8 @@ import imgDespegar from "../img/work/despegar-500x500.png";
 
 // size controls how many grid cells a card spans in the bento layout.
 // "large" -> 2x2, "wide" -> 2x1, "small" -> 1x1 (default when omitted).
+// Projects without an `image` yet render an initials placeholder instead
+// (see the `color` field) until real artwork is added.
 const projects = [
   {
     name: "Wallet App",
@@ -45,6 +47,42 @@ const projects = [
     image: imgDespegar,
     url: "/work/despegar",
     size: "small",
+  },
+  {
+    name: "Grupo Axo",
+    client: "Grupo Axo",
+    description: "Add project description here",
+    discipline: "TBD",
+    url: "/work/grupo-axo",
+    size: "wide",
+    color: "from-rose-500 to-orange-400",
+  },
+  {
+    name: "Cashi",
+    client: "Cashi",
+    description: "Add project description here",
+    discipline: "TBD",
+    url: "/work/cashi",
+    size: "small",
+    color: "from-emerald-500 to-teal-400",
+  },
+  {
+    name: "Wally",
+    client: "Wally",
+    description: "Add project description here",
+    discipline: "TBD",
+    url: "/work/wally",
+    size: "small",
+    color: "from-sky-500 to-indigo-400",
+  },
+  {
+    name: "Ingram",
+    client: "Ingram",
+    description: "Add project description here",
+    discipline: "TBD",
+    url: "/work/ingram",
+    size: "small",
+    color: "from-fuchsia-500 to-purple-400",
   },
 ];
 
@@ -142,11 +180,23 @@ export default function Work() {
                 }}
                 className="group relative h-full w-full overflow-hidden rounded-2xl bg-zinc-900"
               >
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  className="absolute inset-0 h-full w-full object-cover object-[center_75%] transition-transform duration-500 ease-out group-hover:scale-105"
-                />
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    className="absolute inset-0 h-full w-full object-cover object-[center_75%] transition-transform duration-500 ease-out group-hover:scale-105"
+                  />
+                ) : (
+                  <div
+                    className={`absolute inset-0 flex items-center justify-center bg-gradient-to-br ${
+                      project.color || "from-zinc-700 to-zinc-900"
+                    }`}
+                  >
+                    <span className="text-4xl font-bold tracking-tight text-white/30">
+                      {project.name}
+                    </span>
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-5">
                   <span className="text-xs uppercase tracking-wide text-white/60">

@@ -19,6 +19,10 @@ const Wallet = lazy(() => import("./pages/walletApp"));
 const NgoDonationApp = lazy(() => import("./pages/ngoDonationApp"));
 const Venmo = lazy(() => import("./pages/venmo"));
 const Despegar = lazy(() => import("./pages/despegar"));
+const GrupoAxo = lazy(() => import("./pages/grupoAxo"));
+const Cashi = lazy(() => import("./pages/cashi"));
+const Wally = lazy(() => import("./pages/wally"));
+const Ingram = lazy(() => import("./pages/ingram"));
 const Podcast = lazy(() => import("./pages/Podcast"));
 
 export default function App() {
@@ -36,6 +40,10 @@ export default function App() {
               <Route path="/work/ngo-donation-app" element={<NgoDonationApp />} />
               <Route path="/work/venmo" element={<Venmo />} />
               <Route path="/work/despegar" element={<Despegar />} />
+              <Route path="/work/grupo-axo" element={<GrupoAxo />} />
+              <Route path="/work/cashi" element={<Cashi />} />
+              <Route path="/work/wally" element={<Wally />} />
+              <Route path="/work/ingram" element={<Ingram />} />
               <Route path="/podcast" element={<Podcast />} />
             </Routes>
           </AnimatePresence>
