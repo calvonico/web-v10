@@ -17,9 +17,22 @@ function TrophyIcon(props) {
   );
 }
 
-const upcomingRaces = [
-  { edition: "DEKA Strong Barcelona", date: "March 2027" },
-  { edition: "DEKA Mile Barcelona", date: "September 2027" },
+const races = [
+  {
+    edition: "DEKA Mile Barcelona",
+    date: "September 2026",
+    status: "won",
+  },
+  {
+    edition: "DEKA Strong Barcelona",
+    date: "March 2027",
+    status: "upcoming",
+  },
+  {
+    edition: "DEKA Mile Barcelona",
+    date: "September 2027",
+    status: "upcoming",
+  },
 ];
 
 export default function Deka() {
@@ -29,17 +42,19 @@ export default function Deka() {
         <TrophyIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Fitness</span>
       </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Competed in DEKA Mile Barcelona (September 2026) and won a medal.
-      </p>
 
       <div className="mt-4 space-y-2">
-        {upcomingRaces.map((race, i) => (
+        {races.map((race, i) => (
           <div
             key={i}
-            className="flex items-center justify-between rounded-xl bg-zinc-50 px-3 py-2 dark:bg-slate-800"
+            className={`flex items-center justify-between rounded-xl px-3 py-2 ${
+              race.status === "won"
+                ? "bg-amber-50 dark:bg-amber-900/20"
+                : "bg-zinc-50 dark:bg-slate-800"
+            }`}
           >
-            <span className="text-sm text-zinc-700 dark:text-zinc-300">
+            <span className="flex items-center gap-1.5 text-sm text-zinc-700 dark:text-zinc-300">
+              {race.status === "won" && <span aria-hidden="true">🏅</span>}
               {race.edition}
             </span>
             <span className="text-sm font-semibold text-zinc-900 dark:text-white">
