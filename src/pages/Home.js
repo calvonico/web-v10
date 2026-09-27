@@ -43,11 +43,11 @@ export default function Home() {
               </FadeInBox>
 
               <FadeInBox className="caja dark:bg-slate-900" delay={0.24}>
-                <SocialMedia />
+                <Lab />
               </FadeInBox>
 
               <FadeInBox className="caja dark:bg-slate-900" delay={0.32}>
-                <Lab />
+                <SocialMedia />
               </FadeInBox>
 
 
@@ -150,13 +150,13 @@ export default function Home() {
                 <Nutrigym />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.48}>
-                <Lab />
-              </FadeInBox>
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.56}>
                 <Deka />
               </FadeInBox>
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.64}>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.56}>
                 <Suscripcion />
+              </FadeInBox>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.64}>
+                <Lab />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.72}>
                 <SocialMedia />

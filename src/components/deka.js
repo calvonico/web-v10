@@ -18,8 +18,8 @@ function TrophyIcon(props) {
 }
 
 const upcomingRaces = [
-  { edition: "DEKA Barcelona", date: "March 2027" },
-  { edition: "DEKA Barcelona", date: "September 2027" },
+  { edition: "DEKA Strong Barcelona", date: "March 2027" },
+  { edition: "DEKA Mile Barcelona", date: "September 2027" },
 ];
 
 export default function Deka() {
@@ -30,7 +30,7 @@ export default function Deka() {
         <span className="ml-3">Fitness</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Competed in DEKA Barcelona.
+        Competed in DEKA Mile Barcelona (September 2026) and won a medal.
       </p>
 
       <div className="mt-4 space-y-2">
