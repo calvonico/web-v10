@@ -14,6 +14,9 @@ import Notes from "../components/notes";
 import PodcastPlayer from "../components/podcastplayer";
 import FadeInBox from "../components/FadeInBox";
 import FeaturedWork from "../components/FeaturedWork";
+import Lab from "../components/lab";
+import Nutrigym from "../components/nutrigym";
+import Deka from "../components/deka";
 
 
 export default function Home() {
@@ -43,6 +46,10 @@ export default function Home() {
                 <SocialMedia />
               </FadeInBox>
 
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.32}>
+                <Lab />
+              </FadeInBox>
+
 
             </div>
             <div className="my-masonry-grid_column">
@@ -50,6 +57,9 @@ export default function Home() {
                 <Climamap />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.08}>
+                <Nutrigym />
+              </FadeInBox>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.16}>
                 <PodcastPlayer />
               </FadeInBox>
               {/* <div className="caja dark:bg-slate-900">
@@ -69,7 +79,7 @@ export default function Home() {
               {/*<div className="caja dark:bg-slate-900">
                 <Buildinpublic />
               </div>*/}
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.16}>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.24}>
                 <Books />
               </FadeInBox>
               {/* <div className="caja dark:bg-slate-900">
@@ -85,7 +95,10 @@ export default function Home() {
               {/* <div className="caja dark:bg-slate-900">
                 <Portfolio />
               </div> */}
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.24}>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.32}>
+                <Deka />
+              </FadeInBox>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.4}>
                 <Suscripcion />
               </FadeInBox>
 
@@ -134,9 +147,18 @@ export default function Home() {
                 <Series />
               </div> */}
               <FadeInBox className="caja dark:bg-slate-900" delay={0.4}>
-                <Suscripcion />
+                <Nutrigym />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.48}>
+                <Lab />
+              </FadeInBox>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.56}>
+                <Deka />
+              </FadeInBox>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.64}>
+                <Suscripcion />
+              </FadeInBox>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.72}>
                 <SocialMedia />
               </FadeInBox>
             </div>
