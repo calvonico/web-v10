@@ -13,6 +13,7 @@ import Suscripcion from "../components/suscripcion";
 import Notes from "../components/notes";
 import PodcastPlayer from "../components/podcastplayer";
 import FadeInBox from "../components/FadeInBox";
+import FeaturedWork from "../components/FeaturedWork";
 
 
 export default function Home() {
@@ -26,15 +27,19 @@ export default function Home() {
           <div className="my-masonry-grid">
             <div className="my-masonry-grid_column">
 
-               <FadeInBox className="caja dark:bg-slate-900" delay={0}>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0}>
+                <FeaturedWork />
+              </FadeInBox>
+
+               <FadeInBox className="caja dark:bg-slate-900" delay={0.08}>
                 <Notes />
               </FadeInBox>
 
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.08}>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.16}>
                 <Movies />
               </FadeInBox>
 
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.16}>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.24}>
                 <SocialMedia />
               </FadeInBox>
 
@@ -111,24 +116,27 @@ export default function Home() {
                 <Buildinpublic />
               </div> */}
               <FadeInBox className="caja dark:bg-slate-900" delay={0}>
-                <Notes />
+                <FeaturedWork />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.08}>
-                <Movies />
+                <Notes />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.16}>
-                <PodcastPlayer />
+                <Movies />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.24}>
+                <PodcastPlayer />
+              </FadeInBox>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.32}>
                 <Books />
               </FadeInBox>
               {/* <div className="caja dark:bg-slate-950">
                 <Series />
               </div> */}
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.32}>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.4}>
                 <Suscripcion />
               </FadeInBox>
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.4}>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.48}>
                 <SocialMedia />
               </FadeInBox>
             </div>
