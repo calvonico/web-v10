@@ -1,6 +1,20 @@
-import { Icon } from "@iconify/react";
+import { useState } from "react";
+
+const EMAIL = "hola@nicocalvo.com";
 
 export default function SocialMedia() {
+  const [copied, setCopied] = useState(false);
+
+  function copyEmail() {
+    navigator.clipboard
+      .writeText(EMAIL)
+      .then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      })
+      .catch(() => {});
+  }
+
   function GloveIcon(props) {
     return (
       <svg
@@ -26,16 +40,20 @@ export default function SocialMedia() {
         <GloveIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Let's connect</span>
       </h2>
-      <div className="iconos mt-8">
-        <a href="mailto:nico@nicocalvo.com" target={"_blank"} rel={"noreferrer"}><Icon className="redes" icon="bi:envelope" color="var(--redsocial-email)" height="24" /></a>
-        {/* <a href="https://linkedin.com/in/nicolascalvo" target={"_blank"} rel={"noreferrer"}><Icon className="redes" icon="bi:linkedin" color="var(--redsocial-linkedin)" height="24" /></a> */}
-        {/* <a href="https://behance.net/calvonico" target={"_blank"} rel={"noreferrer"} ><Icon className="redes" icon="bi:behance" color="var(--redsocial-behance)" height="28" /></a> */}
-        {/* <a href="https://threads.net/calvonico" target={'_blank'} rel={'noreferrer'} ><Icon className="redes" icon="bi:threads" color='var(--redsocial-instagram)' height="24" /></a>
-        <a href="https://instagram.com/calvonico" target={'_blank'} rel={'noreferrer'} ><Icon className="redes" icon="bi:instagram" color='var(--redsocial-dribbble)' height="24" /></a> */}
-        <a href="https://dribbble.com/calvonico" target={'_blank'} rel={'noreferrer'} ><Icon icon="bi:dribbble" className="redes" height="24" color="var(--redsocial-dribbble)" /></a> 
-        {/* <a href="https://twitter.com/calvonico" target={'_blank'} rel={'noreferrer'}><Icon className='redes' icon="bi:twitter" color='var(--redsocial-twitter)' height="28" /></a> */}
-        <a href="https://github.com/calvonico" target={'_blank'} rel={'noreferrer'}><Icon icon="bi:github" className="redes" height="24" color="var(--redsocial-github)" /></a>
-        {/* <a href="https://twitch.tv/calvonico" target={'_blank'} rel={'noreferrer'}><Icon className='redes' icon="bi:twitch" color='var(--redsocial-twitch)' height="24" /></a> */}
+      <div className="mt-6 flex items-center justify-between gap-3">
+        <a
+          href={`mailto:${EMAIL}`}
+          className="text-base font-medium text-zinc-900 transition-colors hover:text-teal-600 dark:text-zinc-100 dark:hover:text-teal-400"
+        >
+          {EMAIL}
+        </a>
+        <button
+          type="button"
+          onClick={copyEmail}
+          className="flex-none rounded-full px-3 py-1 text-xs font-medium text-zinc-600 ring-1 ring-inset ring-zinc-300 transition-colors hover:bg-zinc-50 dark:text-zinc-300 dark:ring-slate-700 dark:hover:bg-slate-800"
+        >
+          {copied ? "Copied!" : "Copy"}
+        </button>
       </div>
     </div>
   );
