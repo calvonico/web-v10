@@ -43,7 +43,7 @@ export default function Home() {
               </FadeInBox>
 
               <FadeInBox className="caja dark:bg-slate-900" delay={0.24}>
-                <Lab />
+                <Deka />
               </FadeInBox>
 
               <FadeInBox className="caja dark:bg-slate-900" delay={0.32}>
@@ -60,6 +60,9 @@ export default function Home() {
                 <Nutrigym />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.16}>
+                <Lab />
+              </FadeInBox>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.24}>
                 <PodcastPlayer />
               </FadeInBox>
               {/* <div className="caja dark:bg-slate-900">
@@ -79,7 +82,7 @@ export default function Home() {
               {/*<div className="caja dark:bg-slate-900">
                 <Buildinpublic />
               </div>*/}
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.24}>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.32}>
                 <Books />
               </FadeInBox>
               {/* <div className="caja dark:bg-slate-900">
@@ -95,9 +98,6 @@ export default function Home() {
               {/* <div className="caja dark:bg-slate-900">
                 <Portfolio />
               </div> */}
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.32}>
-                <Deka />
-              </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.4}>
                 <Suscripcion />
               </FadeInBox>
@@ -150,13 +150,13 @@ export default function Home() {
                 <Nutrigym />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.48}>
-                <Deka />
+                <Lab />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.56}>
-                <Suscripcion />
+                <Deka />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.64}>
-                <Lab />
+                <Suscripcion />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.72}>
                 <SocialMedia />
