@@ -91,15 +91,20 @@ export default function Lab() {
         <LabScene />
       </div>
 
-      <div className="mt-4 flex items-center justify-between rounded-xl border border-dashed border-zinc-300 px-3 py-2 dark:border-zinc-700">
-        <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
+      <a
+        href="https://quesopedia.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group mt-4 flex items-center justify-between rounded-xl bg-zinc-50 px-3 py-2 transition-colors hover:bg-zinc-100 dark:bg-slate-800 dark:hover:bg-slate-700"
+      >
+        <span className="text-sm font-medium text-zinc-700 transition-colors group-hover:text-teal-600 dark:text-zinc-300 dark:group-hover:text-teal-400">
           Quesopedia
         </span>
-        <span className="inline-flex items-center gap-1.5 text-xs font-medium text-zinc-400 dark:text-zinc-500">
-          <span className="h-1.5 w-1.5 rounded-full bg-amber-400"></span>
-          Coming soon
+        <span className="inline-flex items-center gap-1.5 text-xs font-medium text-zinc-500 dark:text-zinc-400">
+          <span className="h-1.5 w-1.5 rounded-full bg-teal-500"></span>
+          v1
         </span>
-      </div>
+      </a>
     </div>
   );
 }
