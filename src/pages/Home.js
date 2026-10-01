@@ -135,23 +135,23 @@ export default function Home() {
                 <Notes />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.16}>
-                <Movies />
+                <Nutrigym />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.24}>
-                <PodcastPlayer />
+                <Lab />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.32}>
+                <Movies />
+              </FadeInBox>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.4}>
+                <PodcastPlayer />
+              </FadeInBox>
+              <FadeInBox className="caja dark:bg-slate-900" delay={0.48}>
                 <Books />
               </FadeInBox>
               {/* <div className="caja dark:bg-slate-950">
                 <Series />
               </div> */}
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.4}>
-                <Nutrigym />
-              </FadeInBox>
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.48}>
-                <Lab />
-              </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.56}>
                 <Deka />
               </FadeInBox>
