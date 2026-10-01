@@ -31,7 +31,7 @@ export const projects = [
   {
     name: "Venmo",
     client: "PayPal",
-    description: "Graphic and email marketing assets",
+    description: "Email, in-app and social media creatives for the Commerce area",
     discipline: "Graphic Design",
     image: imgVenmo,
     url: "/work/venmo",
@@ -41,7 +41,7 @@ export const projects = [
   {
     name: "Despegar",
     client: "Despegar",
-    description: "Marketing graphic assets",
+    description: "Promotional creatives for the website and app: home banners and mobile landing pages",
     discipline: "Graphic Design",
     image: imgDespegar,
     url: "/work/despegar",
