@@ -60,9 +60,9 @@ export default function CaseStudy({
                   {hero && (
                     <figure className="mt-12">
                       <img
-                        className="aspect-video rounded-xl bg-gray-50 object-cover shadow-2xl"
+                        className="w-full rounded-xl bg-gray-50 shadow-2xl"
                         src={hero}
-                        alt=""
+                        alt={title}
                       />
                     </figure>
                   )}
@@ -110,22 +110,28 @@ export default function CaseStudy({
 
                   {sections.map((section, i) => (
                     <div key={i}>
-                      <div className="mt-14 max-w-2xl">
-                        <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                          {section.heading}
-                        </h2>
-                        {(section.paragraphs || []).map((p, j) => (
-                          <p key={j} className="mt-6">
-                            {p}
-                          </p>
-                        ))}
-                      </div>
+                      {(section.heading || section.paragraphs?.length > 0) && (
+                        <div className="mt-14 max-w-2xl">
+                          {section.heading && (
+                            <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                              {section.heading}
+                            </h2>
+                          )}
+                          {(section.paragraphs || []).map((p, j) => (
+                            <p key={j} className="mt-6">
+                              {p}
+                            </p>
+                          ))}
+                        </div>
+                      )}
                       {(section.images || []).map((img, j) => (
                         <figure key={j} className="mt-12">
                           <img
                             className="aspect-auto rounded-xl bg-gray-50 object-cover"
                             src={img.src}
                             alt={img.alt || ""}
+                            loading="lazy"
+                            decoding="async"
                           />
                         </figure>
                       ))}
