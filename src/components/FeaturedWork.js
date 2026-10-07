@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { projects } from "../data/projects";
 
-const featured = projects.filter((p) => p.featured);
+const featured = projects
+  .filter((p) => p.featured)
+  .sort((a, b) => a.featured - b.featured);
 
 function BriefcaseIcon(props) {
   return (

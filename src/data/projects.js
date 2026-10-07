@@ -7,6 +7,7 @@ import imgDespegar from "../img/work/despegar-500x500.png";
 // "large" -> 2x2, "wide" -> 2x1, "small" -> 1x1 (default when omitted).
 // Projects without an `image` yet render an initials placeholder instead
 // (see the `color` field) until real artwork is added.
+// `featured` is the position (1 = large tile) in the Home "Selected Work" box.
 export const projects = [
   {
     name: "Wallet App",
@@ -16,7 +17,7 @@ export const projects = [
     image: imgTeengo,
     url: "/work/wallet-app",
     size: "large",
-    featured: true,
+    featured: 1,
   },
   {
     name: "NGO Donation App",
@@ -26,7 +27,6 @@ export const projects = [
     image: imgDonation,
     url: "/work/ngo-donation-app",
     size: "wide",
-    featured: true,
   },
   {
     name: "Venmo",
@@ -36,7 +36,7 @@ export const projects = [
     image: imgVenmo,
     url: "/work/venmo",
     size: "small",
-    featured: true,
+    featured: 3,
   },
   {
     name: "Despegar",
@@ -46,6 +46,7 @@ export const projects = [
     image: imgDespegar,
     url: "/work/despegar",
     size: "small",
+    featured: 2,
   },
   {
     name: "Grupo Axo",
