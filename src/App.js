@@ -49,18 +49,21 @@ export default function App() {
           </AnimatePresence>
         </Suspense>
 
-        <div className="pb-12 z-10">
-          <p className="copyright dark:text-zinc-300">
-            Nico Calvo © {new Date().getFullYear()} &ndash; v10
-          </p>
-          <p className="copyright dark:text-zinc-300 text-xs opacity-70">
+        <footer className="z-10 mx-auto flex w-[900px] max-w-full flex-col gap-1 px-[18px] pb-12 pt-4 text-xs text-zinc-500 dark:text-zinc-400 sm:flex-row sm:items-start sm:justify-between">
+          <p>Nico Calvo © {new Date().getFullYear()} &ndash; v10</p>
+          <p className="max-w-md opacity-80 sm:text-right">
             Movie data and posters from{' '}
-            <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.themoviedb.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-zinc-700 dark:hover:text-zinc-200"
+            >
               TMDb
             </a>
             . This website uses the TMDb API but is not endorsed or certified by TMDb.
           </p>
-        </div>
+        </footer>
         <div className="fondo-degradado"></div>
       </div>
 
