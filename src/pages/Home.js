@@ -27,12 +27,11 @@ export default function Home() {
           <Bio />
         </FadeInBox>
         <div className="ver_desktop">
+          <FadeInBox className="caja mb-[22px] dark:bg-slate-900" delay={0}>
+            <FeaturedWork />
+          </FadeInBox>
           <div className="my-masonry-grid">
             <div className="my-masonry-grid_column">
-
-              <FadeInBox className="caja dark:bg-slate-900" delay={0}>
-                <FeaturedWork />
-              </FadeInBox>
 
                <FadeInBox className="caja dark:bg-slate-900" delay={0.08}>
                 <Notes />

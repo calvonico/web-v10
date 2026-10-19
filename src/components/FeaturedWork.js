@@ -34,19 +34,15 @@ export default function FeaturedWork() {
         <span className="ml-3">Selected Work</span>
       </h2>
 
-      <div className="mt-6 grid grid-cols-2 gap-3">
+      <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
         {hero && (
           <Link
             key={hero.name}
             to={hero.url}
-            className="group relative col-span-2 h-40 overflow-hidden rounded-xl bg-zinc-900"
+            className="group relative col-span-2 h-44 overflow-hidden rounded-xl bg-zinc-900 sm:col-span-1 sm:h-auto sm:aspect-square"
           >
             <ProjectImage project={hero} />
-            <div className="absolute inset-x-0 bottom-0 p-3">
-              <span className="text-sm font-semibold text-white">
-                {hero.name}
-              </span>
-            </div>
+            <ProjectLabel project={hero} eyebrowOnMobile />
           </Link>
         )}
 
@@ -54,14 +50,10 @@ export default function FeaturedWork() {
           <Link
             key={project.name}
             to={project.url}
-            className="group relative h-28 overflow-hidden rounded-xl bg-zinc-900"
+            className="group relative h-28 overflow-hidden rounded-xl bg-zinc-900 sm:h-auto sm:aspect-square"
           >
             <ProjectImage project={project} />
-            <div className="absolute inset-x-0 bottom-0 p-3">
-              <span className="text-sm font-semibold text-white">
-                {project.name}
-              </span>
-            </div>
+            <ProjectLabel project={project} />
           </Link>
         ))}
       </div>
@@ -75,6 +67,23 @@ export default function FeaturedWork() {
           View all work
         </Link>
       </div>
+    </div>
+  );
+}
+
+function ProjectLabel({ project, eyebrowOnMobile }) {
+  return (
+    <div className="absolute inset-x-0 bottom-0 p-3 sm:p-4">
+      <span
+        className={`${
+          eyebrowOnMobile ? "block" : "hidden sm:block"
+        } text-[10px] font-medium uppercase tracking-wider text-white/70`}
+      >
+        {project.discipline}
+      </span>
+      <span className="font-display text-sm font-semibold text-white sm:text-lg">
+        {project.name}
+      </span>
     </div>
   );
 }
