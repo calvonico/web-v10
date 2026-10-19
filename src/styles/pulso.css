@@ -34,10 +34,6 @@
   .opacity-20 {
     opacity: .2;
   }
-  .bg-\[\#679BFF\] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(103 155 255/var(--tw-bg-opacity));
-  }
   .rounded-full {
     border-radius: 9999px;
   }
