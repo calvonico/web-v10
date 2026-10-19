@@ -3,3 +3,4 @@ dist
 .parcel-cache
 portfolio.js
 portfolio2.js
+.DS_Store
