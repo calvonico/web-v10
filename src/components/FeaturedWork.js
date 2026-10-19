@@ -63,7 +63,7 @@ export default function FeaturedWork() {
           to="/work"
           className="flex w-full items-center justify-center rounded-xl bg-teal-600 px-3 py-2 text-base font-semibold text-white shadow-sm relative overflow-hidden group hover:bg-gradient-to-r hover:from-teal-600 hover:to-teal-700 hover:ring-2 hover:ring-offset-2 hover:ring-teal-500 dark:ring-offset-slate-950 transition-all ease-out duration-300"
         >
-          <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-96 trans ease"></span>
+          <span className="absolute left-full w-8 h-32 -mt-12 transition-all duration-1000 ease-out bg-white opacity-10 rotate-12 group-hover:-left-12"></span>
           View all work
         </Link>
       </div>
