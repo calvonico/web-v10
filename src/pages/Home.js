@@ -19,6 +19,17 @@ import Nutrigym from "../components/nutrigym";
 import Deka from "../components/deka";
 
 
+function ConnectCard({ delay }) {
+  return (
+    <FadeInBox className="caja dark:bg-slate-900" delay={delay}>
+      <SocialMedia />
+      <div className="mt-6 border-t border-zinc-200 pt-6 dark:border-slate-800">
+        <Suscripcion />
+      </div>
+    </FadeInBox>
+  );
+}
+
 export default function Home() {
   return (
     <div className="css2">
@@ -45,9 +56,7 @@ export default function Home() {
                 <Deka />
               </FadeInBox>
 
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.32}>
-                <SocialMedia />
-              </FadeInBox>
+              <ConnectCard delay={0.32} />
 
 
             </div>
@@ -97,9 +106,6 @@ export default function Home() {
               {/* <div className="caja dark:bg-slate-900">
                 <Portfolio />
               </div> */}
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.4}>
-                <Suscripcion />
-              </FadeInBox>
 
 
             </div>
@@ -154,12 +160,7 @@ export default function Home() {
               <FadeInBox className="caja dark:bg-slate-900" delay={0.56}>
                 <Deka />
               </FadeInBox>
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.64}>
-                <Suscripcion />
-              </FadeInBox>
-              <FadeInBox className="caja dark:bg-slate-900" delay={0.72}>
-                <SocialMedia />
-              </FadeInBox>
+              <ConnectCard delay={0.64} />
             </div>
           </div>
         </div>
