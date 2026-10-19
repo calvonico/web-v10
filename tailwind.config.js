@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter var, sans-serif",],
+        sans: ["Inter", "sans-serif"],
+        display: ["Manrope", "sans-serif"],
       },
       keyframes: {
         'lab-bubble': {
