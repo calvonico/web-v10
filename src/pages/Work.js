@@ -31,28 +31,28 @@ export default function Work() {
 
   return (
     <>
-      <div className="flex items-center absolute top-4 left-4 text-gray-500 z-10">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="2.5"
-          stroke="currentColor"
-          className="w-4 h-4"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15.75 19.5L8.25 12l7.5-7.5"
-          />
-        </svg>
-        <Link to="/">
-          <p className="ms-1 dark:text-white">Home</p>
-        </Link>
-      </div>
-
       <div className="css2">
         <div className="columnas-contenido">
+          <Link
+            to="/"
+            className="mb-3 flex w-fit items-center gap-1 text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-zinc-400 dark:hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="2.5"
+              stroke="currentColor"
+              className="h-4 w-4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+            Home
+          </Link>
           <div className="cuadro-bio dark:bg-slate-900">
             <motion.div
               initial={{ y: 30, opacity: 0 }}

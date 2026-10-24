@@ -17,30 +17,30 @@ export default function CaseStudy({
 }) {
   return (
     <>
-      <div className="flex items-center absolute top-4 left-4 text-gray-500 z-10">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="2.5"
-          stroke="currentColor"
-          className="w-4 h-4"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15.75 19.5L8.25 12l7.5-7.5"
-          />
-        </svg>
-        <Link to={backTo}>
-          <p className="ms-1 dark:text-white">{backLabel}</p>
-        </Link>
-      </div>
-
       <div className="css2">
         <div className="columnas-contenido">
+          <Link
+            to={backTo}
+            className="mb-3 flex w-fit items-center gap-1 text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-zinc-400 dark:hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="2.5"
+              stroke="currentColor"
+              className="h-4 w-4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+            {backLabel}
+          </Link>
           <div className="cuadro-bio dark:bg-slate-950">
-            <div className="px-6 py-12 lg:px-8">
+            <div className="px-6 py-6 sm:py-12 lg:px-8">
               <motion.div
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
