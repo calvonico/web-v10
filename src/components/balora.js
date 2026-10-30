@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function BoltIcon(props) {
   return (
     <svg
@@ -17,15 +19,15 @@ function BoltIcon(props) {
   );
 }
 
-export default function Nutrigym() {
+export default function Balora() {
   return (
     <div>
       <h2 className="flex justify-left text-base font-semibold text-zinc-900 dark:text-zinc-100">
         <BoltIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">NutriGym AI</span>
+        <span className="ml-3">Balora</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        An AI-powered nutrition and training companion I'm currently building.
+        A food and training tracker for iPhone that I'm designing and building.
       </p>
 
       <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-teal-50 px-3 py-1 dark:bg-teal-900/30">
@@ -37,6 +39,13 @@ export default function Nutrigym() {
           Building
         </span>
       </div>
+
+      <Link
+        to="/work/balora"
+        className="mt-4 block text-sm font-medium text-teal-700 hover:text-teal-600 dark:text-teal-300 dark:hover:text-teal-200"
+      >
+        See the case study &rarr;
+      </Link>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import imgBalora from "../img/work/balora-thumb.jpg";
 import imgTeengo from "../img/work/teengo-500x500.png";
 import imgDonation from "../img/work/donapp-500x500.png";
 import imgVenmo from "../img/work/venmo-500x500.png";
@@ -10,14 +11,23 @@ import imgDespegar from "../img/work/despegar-500x500.png";
 // `featured` is the position (1 = large tile) in the Home "Selected Work" box.
 export const projects = [
   {
+    name: "Balora",
+    client: "Balora",
+    description: "Food and training tracker for iPhone, designed and developed end to end",
+    discipline: "UX/UI",
+    image: imgBalora,
+    url: "/work/balora",
+    size: "large",
+    featured: 1,
+  },
+  {
     name: "Wallet App",
     client: "TeenGo",
     description: "UX/UI redesign of a digital wallet for teenagers",
     discipline: "UX/UI",
     image: imgTeengo,
     url: "/work/wallet-app",
-    size: "large",
-    featured: 1,
+    size: "wide",
   },
   {
     name: "NGO Donation App",

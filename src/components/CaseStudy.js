@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 
 // Reusable template for a project case-study page (see pages/walletApp.js for
 // a fully filled-out example). `sections` is an ordered list of content
-// blocks: { heading, paragraphs: string[], images: { src, alt }[] }.
+// blocks: { heading, paragraphs: string[], images: { src, alt }[],
+// screens: { src, alt }[], framed, caption }. `screens` renders phone
+// screenshots side by side on a soft band (scrollable on mobile); set
+// `framed` when the images already include the device frame.
 export default function CaseStudy({
   title,
   subtitle,
@@ -123,6 +126,31 @@ export default function CaseStudy({
                             </p>
                           ))}
                         </div>
+                      )}
+                      {section.screens?.length > 0 && (
+                        <figure className="-mx-6 mt-12 bg-neutral-100 px-6 py-10 dark:bg-slate-900 sm:mx-0 sm:rounded-2xl sm:px-10">
+                          <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto sm:justify-center sm:gap-6 sm:overflow-visible">
+                            {section.screens.map((img, j) => (
+                              <img
+                                key={j}
+                                className={`w-[42%] shrink-0 snap-center sm:w-0 sm:max-w-[220px] sm:flex-1 ${
+                                  section.framed
+                                    ? "h-auto drop-shadow-xl"
+                                    : "aspect-[410/730] rounded-[1.25rem] object-cover object-top shadow-lg ring-1 ring-black/5"
+                                }`}
+                                src={img.src}
+                                alt={img.alt || ""}
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            ))}
+                          </div>
+                          {section.caption && (
+                            <figcaption className="mt-6 text-center text-sm text-slate-500 dark:text-slate-400">
+                              {section.caption}
+                            </figcaption>
+                          )}
+                        </figure>
                       )}
                       {(section.images || []).map((img, j) => (
                         <figure key={j} className="mt-12">

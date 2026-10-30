@@ -15,7 +15,7 @@ import PodcastPlayer from "../components/podcastplayer";
 import FadeInBox from "../components/FadeInBox";
 import FeaturedWork from "../components/FeaturedWork";
 import Lab from "../components/lab";
-import Nutrigym from "../components/nutrigym";
+import Balora from "../components/balora";
 import Deka from "../components/deka";
 
 
@@ -65,7 +65,7 @@ export default function Home() {
                 <Climamap />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.08}>
-                <Nutrigym />
+                <Balora />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.16}>
                 <Lab />
@@ -140,7 +140,7 @@ export default function Home() {
                 <Notes />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.16}>
-                <Nutrigym />
+                <Balora />
               </FadeInBox>
               <FadeInBox className="caja dark:bg-slate-900" delay={0.24}>
                 <Lab />
