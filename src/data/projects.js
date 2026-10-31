@@ -1,4 +1,5 @@
 import imgBalora from "../img/work/balora-thumb.jpg";
+import imgWally from "../img/work/wally-thumb.jpg";
 import imgTeengo from "../img/work/teengo-500x500.png";
 import imgDonation from "../img/work/donapp-500x500.png";
 import imgVenmo from "../img/work/venmo-500x500.png";
@@ -81,9 +82,9 @@ export const projects = [
     client: "Wally",
     description: "UI design for a new business line in an international payments app",
     discipline: "UX/UI",
+    image: imgWally,
     url: "/work/wally",
     size: "small",
-    color: "from-sky-500 to-indigo-400",
   },
   {
     name: "Ingram",
